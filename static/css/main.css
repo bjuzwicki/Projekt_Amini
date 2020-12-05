@@ -170,11 +170,9 @@ header .fa-chevron-down {
   font-size: 18px;
   text-transform: uppercase;
 }
-
 #aboutus p {
   font-size: 14px;
 }
-
 #aboutus .aboutus-hover {
   -webkit-transition: color .3s;
   transition: color .3s;

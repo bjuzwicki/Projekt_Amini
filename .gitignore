@@ -1,4 +1,5 @@
 /static/img/*
-/nazwa/__pycache__
-/cokolwiek/__pycache__
-/cokolwiek/migrations/__pycache__
+/nazwa/__pycache__/*
+/cokolwiek/__pycache__/*
+/cokolwiek/migrations/__pycache__/*
+
