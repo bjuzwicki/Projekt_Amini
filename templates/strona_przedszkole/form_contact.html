@@ -1,17 +1,108 @@
 <!DOCTYPE html>
+
+
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <title>Formularz kontaktowy</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cennik</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css" />
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" media='screen and (min-width: 576px)' href="static/css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="static/css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="static/css/large.css">
+    <link rel="stylesheet" href="static/css/font-awesome.css">
+    <link rel="stylesheet" href="static/css/all.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-bg" id="navbar">
+
+        <a class="navbar-brand" href="/">
+          <img src="/static/img/logoamini.png" alt="Simply Easy Learning" width="150" height="30">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="/">Home</a>
+                <a class="nav-item nav-link" href="/#aboutus">o nas</a>
+                <a class="nav-item nav-link" href="/#portfolio">galeria</a>
+                <a class="nav-item nav-link" href="#prices">ceny</a>
+                <a class="nav-item nav-link" href="/#team">zespół</a>
+                <a class="nav-item nav-link" href="/#contact">kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="prices" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+
+                   <form class="" method="POST">
+                        {% csrf_token %}
+
+                        {{ form.as_p }}
+                    <div class="form-row">
+                        <div class="col">
+                        <input type="text" class="form-control" placeholder="Imie">
+                        </div>
+                        <div class="col">
+                        <input type="text" class="form-control" placeholder="Nazwisko">
+                        </div>
+                    </div>
+                        <br>
+                    <div class="form-row">
+                        <div class="col">
+                        <input type="text" class="form-control" placeholder="nazwa@domena.com">
+                        </div>
+                        <div class="col">
+                        <input type="text" class="form-control" placeholder="tel.komórkowy">
+                        </div>
+                    </div>
+
+                    <button type="submit"> Wyślij </button>
+                    </form>
 
 
+        </section>
+
+    </main>
+    <footer>
+        <p> &copy; Ofey </p>
+    </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/jquery.waypoints.min"></script>
+    <script src="static/slick/slick.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
 
-    <body>
-        <h1> Tutaj bedzie formularz kontaktowy </h1>
-
-        <img src="/static/img/robertmakmak.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-    </body>
 </html>
+
+
+
+
