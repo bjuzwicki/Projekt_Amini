@@ -1,4 +1,119 @@
-#prices .price-wrap {
-  width: 70%;
+#offer .price-wrap {
+  width: 90%;
 }
+
+.text1 {
+ font-family: Arial;
+ font-size: 22px;
+ opacity: 70%;
+}
+
+.author {
+ font-family: Arial;
+ font-size: 20px;
+}
+
+.menu {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menutext1 {
+    font-family: Source Serif;
+    font-size: 18px;
+    text-transform : none;
+}
+
+#offer .offer-info {
+  font-size: 18px;
+}
+
+#specialization .specialization-info {
+  font-size: 18px;
+}
+
+#team .team-info {
+  font-size: 18px;
+}
+
+#gallery .gallery-info {
+  font-size: 18px;
+}
+
+#team .team-text {
+  margin-top: 20px;
+  color: #ddd;
+}
+
+#gallery .gallery-text {
+  margin-top: 20px;
+}
+
+#specialization .specialization-text {
+  margin-top: 20px;
+}
+
+.text2 {
+ font-family: Arial;
+ text-align: center;
+ font-size: 18px;
+}
+
+.text3 {
+ font-family: Arial;
+ text-align: center;
+ font-size: 21px;
+}
+
+.text4 {
+ font-family: Arial;
+ text-align: center;
+ font-size: 18px;
+}
+
+.text5 {
+ font-family: Arial;
+ text-align: center;
+ font-size: 26px;
+}
+
+.text6 {
+ font-family: Arial;
+ text-align: left;
+ font-size: 18px;
+}
+
+.image1 {
+     max-width: 50%;
+    border-radius: 50%;
+    padding: 0px 0px 15px 0px;
+}
+
+.image2 {
+    max-width: 50%;
+    border-radius: 50%;
+    padding: 0px 0px 15px 0px;
+}
+
+.column1{
+   text-align: center;
+   padding: 15px 0;
+}
+
+th
+{
+    font-size: 18px;
+}
+
+tr
+{
+    font-size: 16px;
+}
+
+td
+{
+    height:50px;
+    line-height: 30px;
+}
+
 /*# sourceMappingURL=small.css.map */

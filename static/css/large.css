@@ -11,17 +11,18 @@ header .fa-chevron-down {
   color: #fff;
 }
 
-
-#prices .price-wrap {
+#offer .price-wrap {
   width: 80%;
 }
 
 @media (min-width: 1200px) {
-  #aboutus-hero .jumbotron {
-    padding: 100px 0;
+  #specialization .jumbotron {
+    padding: 60px 0px;
   }
 
-  #prices .price-wrap {
+@media (min-width: 1200px) {
+
+  #offer .price-wrap {
     width: 85%;
   }
 
@@ -31,8 +32,7 @@ header .fa-chevron-down {
 }
 
 @media (min-width: 1400px) {
-  #aboutus-hero .jumbotron {
-    padding: 120px 0;
+  #specialization .jumbotron {
   }
 }
 
@@ -43,13 +43,125 @@ header .fa-chevron-down {
 }
 
 @media (min-width: 2000px) {
-  #aboutus-hero .jumbotron {
-    padding: 100px 0;
+  #specialization .jumbotron {
   }
 
-  #prices .price-wrap {
+  #offer .price-wrap {
     width: 70%;
   }
+}
+
+.text1 {
+ font-family: Arial;
+ font-size: 36px;
+ opacity: 70%;
+}
+
+.text2 {
+ font-family: Arial;
+ font-size: 30px;
+}
+
+.text3 {
+ font-family: Arial;
+ text-align: left;
+ font-size: 26px;
+}
+
+.text4 {
+ font-family: Arial;
+ font-size: 22px;
+}
+
+.text5 {
+ font-family: Arial;
+ font-size: 26px;
+ text-align: right;
+}
+
+.text6 {
+ font-family: Arial;
+ text-align: left;
+ font-size: 22px;
+}
+
+.author {
+ font-family: Arial;
+ font-size: 30px;
+}
+
+.menu {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menutext1 {
+    font-family: Source Serif;
+    font-size: 20px;
+    text-transform : none;
+}
+
+#specialization .specialization-info {
+  font-size: 28px;
+}
+
+#specialization .specialization-text {
+  margin-top: 30px;
+}
+
+#gallery .gallery-info {
+  font-size: 28px;
+}
+
+#gallery .gallery-text {
+  margin-top: 40px;
+}
+
+#team .team-info {
+  font-size: 28px;
+}
+
+#team .team-text {
+  margin-top: 40px;
+  color: #ddd;
+}
+
+.image1 {
+    float: left;
+    margin-left: 0px;
+    margin-right: 20px;
+    max-height: 250px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.image2 {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0px;
+    max-height: 250px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+#offer .offer-info {
+  font-size: 28px;
+}
+
+th
+{
+    font-size: 24px;
+}
+
+tr
+{
+    font-size: 22px;
+}
+
+td
+{
+    height:100px;
+    line-height: 70px;
 }
 
 /*# sourceMappingURL=large.css.map */

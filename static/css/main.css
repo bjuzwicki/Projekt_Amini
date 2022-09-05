@@ -20,7 +20,14 @@ body {
 h2 {
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
 }
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 .onas {
   text-align: center;
@@ -65,6 +72,8 @@ h2 {
 
 .jumbotron {
   margin: 0;
+  padding: 60px 0;
+
 }
 
 nav {
@@ -114,7 +123,7 @@ header h1 {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/gowniaki.jpg");
+  background-image: url("../img/children-playing-grass.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -160,6 +169,14 @@ header .fa-chevron-down {
   display: none;
 }
 
+#aboutus .jumbotron {
+  background-position: bottom;
+  background-image: url("../img/aboutus1.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
 
 #aboutus i {
   margin-top: 20px;
@@ -181,33 +198,34 @@ header .fa-chevron-down {
   color: #039dff;
 }
 
-#aboutus-hero {
+#specialization {
   color: #ddd;
-  overflow: hidden;
+
 }
 
-#aboutus-hero .jumbotron {
+#specialization .jumbotron {
   position: relative;
-  padding: 60px 0;
   background-image: url("../img/onas.jpg");
-  background-position: center;
+  background-attachment: scroll;
+  background-repeat:no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: 0;
 }
 
-#aboutus-hero .jumbotron h2 {
+#specialization .jumbotron h2 {
   font-size: 32px;
 }
 
-#aboutus-hero .jumbotron i {
+#specialization .jumbotron i {
   font-size: 35px;
 }
 
-#aboutus-hero .jumbotron p {
+#specialization .jumbotron p {
   font-size: 14px;
 }
 
-#aboutus-hero .about-shadow {
+#specialization .about-shadow {
   position: absolute;
   top: 0;
   width: 100%;
@@ -216,16 +234,25 @@ header .fa-chevron-down {
   z-index: -10;
 }
 
-#aboutus-hero .about-hero-item {
+#specialization .about-hero-item {
   margin: 10px 0;
 }
 
-#portfolio .carousel-item {
+#gallery .jumbotron {
+  background-position: left;
+  background-image: url("../img/aboutus1.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+
+#gallery .carousel-item {
   position: relative;
   height: 600px;
 }
 
-#portfolio .carousel-item img {
+#gallery .carousel-item img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -233,7 +260,7 @@ header .fa-chevron-down {
   transform: translate(-50%, -50%);
 }
 
-#portfolio .carousel-caption {
+#gallery .carousel-caption {
   position: absolute;
   left: 0;
   right: 0;
@@ -241,21 +268,25 @@ header .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#portfolio .carousel-indicators {
+#gallery .carousel-indicators {
   padding-bottom: 20px;
 }
 
-#prices .jumbotron {
-  background-color: #f9f9f9;
+#offer .jumbotron {
+  background-position: top;
+  background-image: url("../img/pricelist2.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  z-index: 0;
 }
 
-#prices .price-wrap {
+#offer .price-wrap {
   max-width: 2560px;
   width: 95%;
   margin: 0 auto;
 }
 
-#prices .price-box {
+#offer .price-box {
   margin: 20px 10px;
   padding: 30px;
   background-color: #fff;
@@ -267,49 +298,63 @@ header .fa-chevron-down {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-#prices .price-box h3 {
+#offer .price-box h3 {
   color: #039dff;
   text-transform: uppercase;
+  text-align: center;
 }
 
-#prices .price-box span {
+#offer .price-box span {
   font-weight: bold;
 }
 
-#prices .price-box i {
+#offer .price-box i {
   padding: 0 5px;
   font-size: 23px;
 }
 
-#prices .price-box button {
+#offer .price-box button {
   padding: 10px 20px;
   text-transform: uppercase;
 }
 
-#prices .price-box .price {
+#offer .price-box .priceheader {
+  font-size: 20px;
+}
+
+#offer .price-box .price {
   font-size: 30px;
   font-weight: bold;
 }
 
-#prices .price-box:hover {
+#offer .price-box:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
-#prices .price-text {
+#offer .offer-text {
   margin-top: 30px;
 }
 
 #team .jumbotron {
   position: relative;
-  background-image: url("../img/room-hero.jpg");
-  background-attachment: fixed;
+  background-image: url("../img/kid3.jpg");
+  background-attachment: scroll;
   background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
   z-index: 0;
 }
 
 #team .jumbotron h2 {
+  font-size: 32px;
   color: #ddd;
+  font-weight: bold;
+}
+
+#team .jumbotron h3 {
+  color: #fff;
+  font-weight: bold;
 }
 
 #team .team-shadow {
@@ -317,9 +362,10 @@ header .fa-chevron-down {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -10;
 }
-
+c
 #team .card {
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -328,9 +374,14 @@ header .fa-chevron-down {
 }
 
 #team .card img {
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:20px 0px 10px 0px;
+  image-align:center;
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 #team .card i {
@@ -343,8 +394,8 @@ header .fa-chevron-down {
 }
 
 #team .card:hover {
-  -webkit-transform: scale(0.96);
-  transform: scale(0.96);
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 #team .card-body {
@@ -359,6 +410,7 @@ header .fa-chevron-down {
 
 #team .card-text {
   font-size: 14px;
+   text-align: center;
 }
 
 
@@ -373,12 +425,12 @@ header .fa-chevron-down {
 
 #contact .jumbotron h2 {
   color: #fff;
-  font-weight: bold;
+  font-size: 32px;
 }
 
-#contact .jumbotron .underline {
+/*#contact .jumbotron .underline {
   background-color: #ccc;
-}
+}*/
 
 #contact .contact-shadow {
   position: absolute;
@@ -414,7 +466,8 @@ header .fa-chevron-down {
 }
 
 #contact .contact-us .contact-item .social-media a {
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
   color: #fff;
   text-shadow: 0 0 5px black;
 }
@@ -442,15 +495,15 @@ footer p {
     font-size: 16px;
   }
 
-  #aboutus-hero .jumbotron h2 {
-    font-size: 36px;
-  }
-
-  #aboutus-hero .jumbotron h3 {
+  #specialization .jumbotron h2 {
     font-size: 32px;
   }
 
-  #aboutus-hero .jumbotron p {
+  #specialization .jumbotron h3 {
+    font-size: 26px;
+  }
+
+  #specialization .jumbotron p {
     font-size: 18px;
   }
 
@@ -459,11 +512,6 @@ footer p {
   }
 }
 
-@media (min-width: 411px) {
-  #aboutus-hero .jumbotron {
-    padding: 80px 0;
-  }
-}
 
 @media (min-width: 500px) {
   #team .card-body {
@@ -472,14 +520,64 @@ footer p {
 }
 
 #contact-p {
-
   margin-top: 25px;
   font-size: 20px;
-
 }
 
 .contact-item .fa-facebook-square {
-
   font-size: 50px;
-
 }
+
+
+#gallery .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#gallery .card img {
+  image-align:center;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
+#gallery .card i {
+  padding: 10px 20px;
+}
+
+#gallery .card .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#gallery .card:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+#gallery .card-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+#gallery .card-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+li{
+  font-size: 18px;
+}
+
+hr{
+    height: 1px;
+    border-width:0;
+    color:white;
+    background-color:white;
+}
+
+
+
+

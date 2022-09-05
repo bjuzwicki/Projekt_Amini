@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function ()
+{
 
     // dodaje cień do nawigacji
     // const nav = document.querySelector('.navbar')
@@ -22,10 +23,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction()
+{
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+  {
+    document.getElementById("navbar").style.transition = "padding 1s";
+    document.getElementById("navbar").style.padding = "8px 30px";
+    document.getElementById("logo").style.transition = "width 1s, height 1s";
+    document.getElementById("logo").style.width = "200px";
+    document.getElementById("logo").style.height = "40px";
+  }
+  else
+  {
+    document.getElementById("navbar").style.transition = "padding 1s";
+    document.getElementById("navbar").style.padding = "20px 30px";
+    document.getElementById("logo").style.transition = "width 1s, height 1s";
+    document.getElementById("logo").style.width = "240px";
+    document.getElementById("logo").style.height = "60px";
+  }
+}
+
 
     // slickJS
     $('.team-carousel').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3500,
         mobileFirst: true,
         slidesToShow: 1,
@@ -51,4 +75,30 @@ document.addEventListener('DOMContentLoaded', function () {
         ]
     });
 
+    $('.gallery-carousel').slick({
+        autoplay: false,
+        autoplaySpeed: 3500,
+        mobileFirst: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
+    });
 });
