@@ -381,7 +381,6 @@ c
   image-align:center;
   -o-object-fit: contain;
   object-fit: contain;
-  border-radius: 50%;
 }
 
 #team .card i {
