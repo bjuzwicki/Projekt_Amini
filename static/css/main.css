@@ -9,12 +9,13 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: white;
 }
 
 body {
   position: relative;
-  font-family: 'Lato', sans-serif;
-  background-color: #333;
+  font-family: Calibri;
+  background-color: white;
 }
 
 h2 {
@@ -27,7 +28,6 @@ h3 {
   text-transform: uppercase;
   text-align: center;
 }
-
 
 .onas {
   text-align: center;
@@ -42,7 +42,6 @@ h3 {
 }
 
 .black-text {
-
   color: #ffffff
 }
 
@@ -56,7 +55,7 @@ h3 {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
-  background-color: #039dff;
+  background-color: #000;
 }
 
 .scroll-fix::before {
@@ -83,35 +82,49 @@ nav {
 }
 
 nav a,
-nav i {
-  color: #fff;
+nav c,
+nav i,
+{
   -webkit-transition: color .3s;
   transition: color .3s;
 }
 
+nav a
+{
+    color: #000;
+    font-size: 20px;
+}
+
+nav c
+{
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+}
+
 nav a:hover {
-  color: #039dff;
+    text-shadow: 0 0 1px black;
+    color: #000;
 }
 
-nav i {
-  padding: 10px;
+.navbar
+{
+    border-bottom: 1px solid #999;
+    background-color: #fff;
 }
 
-nav .navbar-brand {
-  font-weight: bold;
+.navbar img
+{
+    width: 300px;
+    height: 100px;
 }
 
-nav .active {
-  color: #039dff;
-}
-
-.shadow-bg {
-  background-color: rgba(0, 0, 0, 0.6);
+.nav .navbar-bran d {
 }
 
 header {
-  color: #fff;
   overflow: hidden;
+  background-color: white;
 }
 
 header h1 {
@@ -123,10 +136,9 @@ header h1 {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/children-playing-grass.jpg");
+  background-image: url("../img/main_background.png");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
 }
 
@@ -134,7 +146,7 @@ header .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.01);
   z-index: -10;
 }
 
@@ -147,18 +159,26 @@ header .hero-text {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
-  text-align: center;
+  height: 90%;
+  color: black;
+  padding: 100px;
+  text-indent: 40px;
+  text-align: justify;
 }
 
 header .hero-text p {
   padding: 10px;
   font-size: 14px;
+}
+
+header .hero-text p1 {
+  padding: 10px;
+  font-size: 14px;
+  text-align: right;
 }
 
 header .btn-outline-light {
@@ -171,7 +191,7 @@ header .fa-chevron-down {
 
 #aboutus .jumbotron {
   background-position: bottom;
-  background-image: url("../img/aboutus1.jpg");
+  background-color: white;
   background-repeat:no-repeat;
   background-size: cover;
   z-index: 0;
@@ -198,49 +218,78 @@ header .fa-chevron-down {
   color: #039dff;
 }
 
-#specialization {
-  color: #ddd;
-
-}
-
 #specialization .jumbotron {
-  position: relative;
-  background-image: url("../img/onas.jpg");
-  background-attachment: scroll;
-  background-repeat:no-repeat;
+  background-image: url("../img/lime_green_background.png");
   background-size: cover;
-  background-position: center;
-  z-index: 0;
+  z-index: -1;
 }
 
-#specialization .jumbotron h2 {
+#specialization {
+  color: #000;
+}
+
+#specialization a
+{
+    color: black;
+    font-weight: bold;
+}
+
+#specialization .jumbotron p4
+{
+    color: #000;
+}
+
+#specialization_list .jumbotron {
+  background-image: url("../img/lime_green_background.png");
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#specialization_list .row
+{
+    margin: 3%;
+    padding: 3%;
+    display: block;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+#specialization_list .row-body
+{
+    margin: 0 auto;
+}
+
+#specialization_list .column {
+}
+
+#specialization_list .jumbotron hr
+{
+    background-color: black;
+}
+
+#specialization_list .jumbotron h2 {
   font-size: 32px;
+  color: black;
 }
 
-#specialization .jumbotron i {
+#specialization_list .jumbotron i {
   font-size: 35px;
 }
 
-#specialization .jumbotron p {
+#specialization_list  .jumbotron p {
   font-size: 14px;
 }
 
-#specialization .about-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -10;
-}
-
-#specialization .about-hero-item {
-  margin: 10px 0;
+#specialization_list a
+{
+    color: black;
+    font-weight: bold;
 }
 
 #gallery .jumbotron {
   background-position: left;
-  background-image: url("../img/aboutus1.jpg");
+  background-color: #fff;
   background-repeat:no-repeat;
   background-size: cover;
   z-index: 0;
@@ -272,10 +321,117 @@ header .fa-chevron-down {
   padding-bottom: 20px;
 }
 
+#gallery .jumbotron p4
+{
+    color: #000;
+}
+
+#gallery_list .jumbotron {
+  background-size: cover;
+  background-image: url("../img/lime_green_background.png");
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#gallery_list .row
+{
+    margin: 3% 15% 0% 15%;
+    padding: 2%;
+    display: block;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+#gallery_list .row-body
+{
+    margin: 0 auto;
+}
+
+#gallery_list .column {
+}
+
+#gallery_list .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#gallery_list .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#gallery_list .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#gallery_list .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#gallery_list .jumbotron p4
+{
+    color: #000;
+}
+
+#gallery_list .jumbotron h2
+{
+    font-size: 32px;
+    color: black;
+}
+
+#gallery_list .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#gallery_list .card img {
+  image-align:center;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
+#gallery_list .card i {
+  padding: 10px 20px;
+}
+
+#gallery_list .card .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#gallery_list .card:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+#gallery_list .card-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+#gallery_list .card-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+#gallery a
+{
+    color: black;
+    font-weight: bold;
+}
+
 #offer .jumbotron {
-  background-position: top;
-  background-image: url("../img/pricelist2.jpg");
-  background-repeat:no-repeat;
+  background-position: center;
+  background-image: url("../img/lime_green_background.png");
   background-size: cover;
   z-index: 0;
 }
@@ -299,7 +455,7 @@ header .fa-chevron-down {
 }
 
 #offer .price-box h3 {
-  color: #039dff;
+  color: #000;
   text-transform: uppercase;
   text-align: center;
 }
@@ -336,108 +492,197 @@ header .fa-chevron-down {
   margin-top: 30px;
 }
 
-#team .jumbotron {
-  position: relative;
-  background-image: url("../img/kid3.jpg");
-  background-attachment: scroll;
+#offer a
+{
+    color: black;
+    font-weight: bold;
+}
+
+#offer_list .jumbotron {
+  background-image: url("../img/lime_green_background.png");
   background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  z-index: 0;
+  z-index: -1;
+  box-sizing: border-box;
 }
 
-#team .jumbotron h2 {
-  font-size: 32px;
-  color: #ddd;
-  font-weight: bold;
+#offer_list .price-wrap {
+  max-width: 2560px;
+  width: 95%;
+  margin: 0 auto;
 }
 
-#team .jumbotron h3 {
-  color: #fff;
-  font-weight: bold;
-}
-
-#team .team-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: -10;
-}
-c
-#team .card {
+#offer_list .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
 
-#team .card img {
-  height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  padding:20px 0px 10px 0px;
-  image-align:center;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-
-#team .card i {
-  padding: 10px 20px;
-}
-
-#team .card .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#team .card:hover {
-  -webkit-transform: scale(0.99);
-  transform: scale(0.99);
-}
-
-#team .card-body {
-  height: 150px;
-}
-
-#team .card-title {
+#offer_list .price-box h3 {
+  color: #000;
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
 }
 
-#team .card-text {
-  font-size: 14px;
-   text-align: center;
+#offer_list .price-box span {
+  font-weight: bold;
 }
 
+#offer_list .price-box i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#offer_list .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#offer_list .price-box .priceheader {
+  font-size: 20px;
+}
+
+#offer_list .price-box .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#offer_list .price-box:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#offer_list .offer-text {
+  margin-top: 30px;
+}
+
+#offer_list a
+{
+    color: black;
+    font-weight: bold;
+}
+
+#offer_list .row
+{
+    margin: 0% 20%;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+#offer_list .row-body
+{
+    margin: 0 auto;
+}
+
+#offer_list .column {
+}
+
+#offer_list .jumbotron h2 {
+  font-size: 32px;
+  color: black;
+}
+
+#team .jumbotron {
+  background-image: url("../img/lime_green_background.png");
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#team .jumbotron h2 {
+  font-size: 32px;
+  color: #000;
+  font-weight: bold;
+}
+
+#team .jumbotron h3 {
+  color: #000;
+  font-weight: bold;
+}
+
+#team .row
+{
+    margin: 3%;
+    padding: 3%;
+    display: block;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+#team .row-body
+{
+    display: flex;
+    margin: 0 auto;
+}
+
+#team .column {
+  float: left;
+  width: 70%;
+}
+
+#team .column2 {
+  float: right;
+  width: 30%;
+}
+
+#team .jumbotron p4
+{
+    color: #000;
+}
+
+#team .header
+{
+ font-family: Calibri;
+ font-size: 26px;
+}
+
+#team p
+{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#team .text
+{
+    font-family: Calibri;
+    font-size: 22px;
+    font-color: black;
+}
+
+#team .image1
+{
+    display: flex;
+    margin-left: auto;
+    border-radius: 20px;
+    width: 70%;
+}
 
 #contact .jumbotron {
   position: relative;
-  background-image: url(../img/contact-hero.jpg);
-  background-position: bottom;
-  background-attachment: fixed;
+  background-color: white;
   background-size: cover;
   z-index: 0;
 }
 
 #contact .jumbotron h2 {
-  color: #fff;
+  color: black;
   font-size: 32px;
 }
 
-/*#contact .jumbotron .underline {
-  background-color: #ccc;
-}*/
+#contact .jumbotron h3 {
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
 
-#contact .contact-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 9, 27, 0.85);
-  z-index: -10;
+#contact .jumbotron p {
+  color: black;
+  font-size: 20px;
 }
 
 #contact .contact-us {
@@ -447,11 +692,11 @@ c
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #fff;
+  color: black;
 }
 
 #contact .contact-us .contact-item {
-  margin: 30px 0;
+  margin: 1% 0%;
 }
 
 #contact .contact-us .contact-item h3 {
@@ -467,22 +712,101 @@ c
 #contact .contact-us .contact-item .social-media a {
   padding-right: 10px;
   padding-left: 10px;
-  color: #fff;
-  text-shadow: 0 0 5px black;
+  color: #4267B2;
+  text-shadow: 0 0 1px black;
 }
 
 #contact .contact-us .contact-item .social-media a:hover {
-  color: #ccc;
+  color: #4267B2;
 }
 
+#contact_list .jumbotron {
+  background-image: url("../img/lime_green_background.png");
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#contact_list .row
+{
+    margin: 3%;
+    padding: 3%;
+    display: block;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+#contact_list .row-body
+{
+    margin: 0 auto;
+}
+
+#contact_list .column {
+}
+
+#contact_list .jumbotron h2 {
+  color: black;
+  font-size: 32px;
+}
+
+#contact_list .jumbotron h3 {
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#contact_list .jumbotron p {
+  color: black;
+  font-size: 20px;
+}
+
+#contact_list .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+}
+
+#contact_list .contact-us .contact-item {
+  margin: 1% 0%;
+}
+
+#contact_list .contact-us .contact-item h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#contact_list .contact-us .contact-item .social-media {
+  font-size: 26px;
+}
+
+#contact_list .contact-us .contact-item .social-media a {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #4267B2;
+  text-shadow: 0 0 1px black;
+}
+
+#contact_list .contact-us .contact-item .social-media a:hover {
+  color: #4267B2;
+}
+
+
+
 footer {
-  color: #fff;
+  background-color: black;
 }
 
 footer p {
-  padding: 20px;
+  color: white;
+  padding: 5px;
   margin-bottom: 0;
   text-align: center;
+  font-weight: bold;
 }
 
 @media (min-width: 375px) {
@@ -503,6 +827,18 @@ footer p {
   }
 
   #specialization .jumbotron p {
+    font-size: 18px;
+  }
+
+  #specialization_list .jumbotron h2 {
+    font-size: 32px;
+  }
+
+  #specialization_list  .jumbotron h3 {
+    font-size: 26px;
+  }
+
+  #specialization_list  .jumbotron p {
     font-size: 18px;
   }
 
@@ -565,6 +901,11 @@ footer p {
     text-align: center;
 }
 
+#gallery a
+{
+    color: black;
+    font-weight: bold;
+}
 
 li{
   font-size: 18px;

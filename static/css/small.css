@@ -1,15 +1,27 @@
+.navbar
+{
+    border-bottom: 1px solid #999;
+    padding: 5px 30px;
+    background-color: #fff;
+}
+
+
 #offer .price-wrap {
   width: 90%;
 }
 
+#offer_list .price-wrap {
+  width: 90%;
+}
+
 .text1 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 22px;
  opacity: 70%;
 }
 
 .author {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 20px;
 }
 
@@ -19,12 +31,16 @@
 }
 
 .menutext1 {
-    font-family: Source Serif;
+    font-family: Calibri;
     font-size: 18px;
     text-transform : none;
 }
 
 #offer .offer-info {
+  font-size: 18px;
+}
+
+#offer_list .offer-info {
   font-size: 18px;
 }
 
@@ -54,31 +70,31 @@
 }
 
 .text2 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: center;
  font-size: 18px;
 }
 
 .text3 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: center;
  font-size: 21px;
 }
 
 .text4 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: center;
  font-size: 18px;
 }
 
 .text5 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: center;
  font-size: 26px;
 }
 
 .text6 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: left;
  font-size: 18px;
 }

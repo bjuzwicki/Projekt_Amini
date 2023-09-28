@@ -15,6 +15,10 @@ header .fa-chevron-down {
   width: 80%;
 }
 
+#offer_list .price-wrap {
+  width: 80%;
+}
+
 @media (min-width: 1200px) {
   #specialization .jumbotron {
     padding: 60px 0px;
@@ -23,6 +27,10 @@ header .fa-chevron-down {
 @media (min-width: 1200px) {
 
   #offer .price-wrap {
+    width: 85%;
+  }
+
+  #offer_list .price-wrap {
     width: 85%;
   }
 
@@ -49,45 +57,70 @@ header .fa-chevron-down {
   #offer .price-wrap {
     width: 70%;
   }
+
+  #offer_list .price-wrap {
+    width: 70%;
+  }
 }
 
+
+.navbar
+{
+    border-bottom: 1px solid #999;
+    padding: 5px 80px;
+    background-color: #fff;
+}
+
+
 .text1 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 36px;
- opacity: 70%;
+ color: black;
+}
+
+.text12 {
+ font-family: Calibri;
+ font-size: 30px;
+ opacity: 80%;
 }
 
 .text2 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 30px;
 }
 
 .text3 {
- font-family: Arial;
+ font-color: black;
+ font-family: Calibri;
  text-align: left;
- font-size: 26px;
+ font-size: 30px;
 }
 
 .text4 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 22px;
+ font-color: black;
 }
 
 .text5 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 26px;
  text-align: right;
+ font-color: black;
 }
 
 .text6 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: left;
  font-size: 22px;
 }
 
+
 .author {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 30px;
+ text-align: right;
+ font-weight: bold;
 }
 
 .menu {
@@ -96,16 +129,16 @@ header .fa-chevron-down {
 }
 
 .menutext1 {
-    font-family: Source Serif;
+    font-family: "Calibri";
     font-size: 20px;
     text-transform : none;
 }
 
-#specialization .specialization-info {
+#specialization_list .specialization-info {
   font-size: 28px;
 }
 
-#specialization .specialization-text {
+#specialization_list .specialization-text {
   margin-top: 30px;
 }
 
@@ -127,24 +160,19 @@ header .fa-chevron-down {
 }
 
 .image1 {
-    float: left;
+    float: right;
     margin-left: 0px;
     margin-right: 20px;
-    max-height: 250px;
-    max-width: 200px;
-    padding: 5px 0;
-}
-
-.image2 {
-    float: right;
-    margin-left: 20px;
-    margin-right: 0px;
-    max-height: 250px;
-    max-width: 200px;
+    max-height: 400px;
+    max-width: 500px;
     padding: 5px 0;
 }
 
 #offer .offer-info {
+  font-size: 28px;
+}
+
+#offer_list .offer-info {
   font-size: 28px;
 }
 

@@ -10,17 +10,21 @@ header .hero-text p {
   width: 90%;
 }
 
+#offer_list .price-wrap {
+  width: 90%;
+}
+
 #offer .offer-info {
   font-size: 28px;
 }
 
-
-#team .card-body {
-  height: 150px;
+#offer_list .offer-info {
+  font-size: 28px;
 }
 
+
 .author {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 30px;
  opacity: 100%;
 }
@@ -31,15 +35,21 @@ header .hero-text p {
 }
 
 .menutext1 {
-    font-family: Source Serif;
+    font-family: "Calibri";
     font-size: 20px;
     text-transform : none;
 }
 
 .text1 {
- font-family: Arial;
- font-size: 36px;
- opacity: 70%;
+    font-family: Calibri;
+    font-size: 36px;
+    opacity: 80%;
+}
+
+.text2 {
+ font-family: Calibri;
+ font-size: 30px;
+ opacity: 100%;
 }
 
 #specialization .specialization-info {
@@ -68,29 +78,29 @@ header .hero-text p {
 }
 
 .text2 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 30px;
 }
 
 .text3 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: left;
  font-size: 26px;
 }
 
 .text4 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 22px;
 }
 
 .text5 {
- font-family: Arial;
+ font-family: Calibri;
  font-size: 26px;
  text-align: right;
 }
 
 .text6 {
- font-family: Arial;
+ font-family: Calibri;
  text-align: left;
  font-size: 22px;
 }

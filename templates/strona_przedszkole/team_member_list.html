@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zespół</title>
+    <title>Amini - Zespół</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -24,80 +23,198 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-    <nav class="navbar navbar-expand-lg fixed-top shadow-bg navbar-default navbar-fixed-top" id="navbar" style="padding:20px 30px" >
-
-        <a class="navbar-brand" href="/#">
-        <img src="/static/img/logoamini.png" alt="Amini" width="240" id="logo" height="60">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-default navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="/">
+            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
         </a>
+        <div class="navbar-collapse navbar-brand">
+            <div class="nav ml-auto menu menutext1">
+                <c>&phone; tel: +48 789 274 847</c>
+                <c>&#9993; recepcja@amini.com.pl</c>
+            </div>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"style="font-size: 1.5em;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="nav nav-pills ml-auto menu menutext1">
-                <a class="nav-item nav-link" href="/#">Strona główna</a>
+            <div class="nav ml-auto menu menutext1">
+                <a class="nav-item nav-link" href="/">Strona główna</a>
                 <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
                 <a class="nav-item nav-link" href="/galeria">Galeria</a>
                 <a class="nav-item nav-link" href="/zespol">Zespół</a>
-                <a class="nav-item nav-link" href="/cennik">Oferta</a>
-                <a class="nav-item nav-link" href="/#contact">Kontakt</a>
+                <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+                <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
             </div>
         </div>
     </nav>
     <main>
         <section id="team" class="scroll-fix">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="team-shadow"></div>
+            <div class="jumbotron">
                 <div class="wrapper">
-                    <h2 style="margin-top: 80px; font-size:44px;">Zespół</h2> <!-- os-animation visibility -->
+                    <h2 style="margin-top: 100px; font-size:40px;">Zespół</h2>
                     <div class="underline"></div>
-                    <div class="row" style="color: #ddd;">
-                        <div class="column1">
-                            <p class="text3"><span class="text3"><em><b>Jolanta Rozmanowska</b></em></span></p>
-                            <img class="image1" src="static/img/team/jola.jpg">
-                            <p style="text-align:justify;text-indent: 40px;">
-                            <span class="text4"><em>Witam serdecznie!!! W gabinecie AMINI realizuję diagnozy oraz terapie integracji sensorycznej. Przygotowanie do zawodu zdobyłam poprzez ukończenie studiów na kierunkach: integracja sensoryczna, oligofrenopedagogika, nauczenie wczesnoszkolne z wychowaniem przedszkolnym, pedagogika szkolna i korekcyjna oraz pedagogika ogólna. Z dziećmi pracuję od 2007 r. Doświadczenie zawodowe zdobywałam w przedszkolu, szkołach podstawowych, jak również gabinetach terapeutycznych dla dzieci.
-                                Ukończyłam liczne szkolenia i kursy, które wzbogaciły mój warsztat pracy, w tym szczególnie w zakresie terapii poznawczo-behawioralnej oraz terapii ręki.</em></span>
-                            </p>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Jolanta Rozmanowska</b></span></h3>
+                                <p>
+                                    <span class="text">Witam serdecznie!!! W gabinecie AMINI realizuję diagnozy oraz terapie integracji sensorycznej. Przygotowanie do zawodu zdobyłam poprzez ukończenie studiów na kierunkach: integracja sensoryczna, oligofrenopedagogika, nauczenie wczesnoszkolne z wychowaniem przedszkolnym, pedagogika szkolna i korekcyjna oraz pedagogika ogólna. Z dziećmi pracuję od 2007 r. Doświadczenie zawodowe zdobywałam w przedszkolu, szkołach podstawowych, jak również gabinetach terapeutycznych. Ukończyłam liczne szkolenia i kursy, które wzbogaciły mój warsztat pracy, w tym szczególnie w zakresie terapii poznawczo-behawioralnej oraz terapii ręki, których elementy znajdują zastosowanie w prowadzonych przeze mnie zajęciach.</span>
+                                </p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/jola.png">
+                            </div>
                         </div>
-                        <div class="column1">
-                            <p style="" class="text5"><span class="text5"><em><b>Marta Staniek</b></em></span></p>
-                            <img class="image2" src="static/img/team/Marta.jpg">
-                            <p style="text-align:justify;text-indent: 40px;">
-                            <span class="text4"><em>Jestem absolwentką Akademii Pedagogiki Specjalnej na kierunkach pedagogika oraz pedagogika specjalna. Uzyskałam tytuły zawodowe na specjalnościach: edukacja wczesnoszkolna i korekcyjna oraz edukacja integracyjna i włączająca zdobywając uprawnienia do pracy z dziećmi w normie rozwojowej oraz tych ze specjalnymi potrzebami edukacyjnymi czy specyficznymi trudnościami w uczeniu się. Ukończyłam również studia podyplomowe z zakresu terapii i diagnozy Integracji Sensorycznej oraz liczne kursy i szkolenia jak np. kurs Monachijskiej Funkcjonalnej Diagnostyki Rozwojowej czy terapii ręki i zaburzeń motoryki małej. Od 2011 roku związana byłam z placówkami edukacyjnymi, gdzie prowadziłam zajęcia specjalistyczne i pracowałam z dziećmi w wieku wczesnoszkolnym oraz przedszkolnym. W gabinecie AMINI prowadzę diagnostykę i terapię z zakresu Integracji Sensorycznej.</em></span></p>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Marta Staniek</b></span></h3>
+                                <p>
+                                <span class="text">Jestem absolwentką Akademii Pedagogiki Specjalnej na kierunkach pedagogika oraz pedagogika specjalna. Uzyskałam tytuły zawodowe na specjalnościach: edukacja wczesnoszkolna i korekcyjna oraz edukacja integracyjna i włączająca zdobywając uprawnienia do pracy z dziećmi w normie rozwojowej oraz tych ze specjalnymi potrzebami edukacyjnymi czy specyficznymi trudnościami w uczeniu się. Ukończyłam również studia podyplomowe z zakresu terapii i diagnozy Integracji Sensorycznej oraz liczne kursy i szkolenia jak np. kurs Monachijskiej Funkcjonalnej Diagnostyki Rozwojowej czy terapii ręki i zaburzeń motoryki małej. Od 2011 roku związana byłam z placówkami edukacyjnymi, gdzie prowadziłam zajęcia specjalistyczne i pracowałam z dziećmi w wieku wczesnoszkolnym oraz przedszkolnym. W gabinecie AMINI prowadzę diagnostykę i terapię z zakresu Integracji Sensorycznej.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Marta.jpg">
+                            </div>
                         </div>
-                        <div class="column1">
-                            <p style="" class="text3"><span class="text3"><em><b>Maria Kujaszewska</b></em></span></p>
-                            <img class="image1" src="static/img/team/Maria.jpg">
-                            <p style="text-align:justify;text-indent: 40px;">
-                            <span class="text4"><em>Przygodę z integracją sensoryczną rozpoczęłam dzięki mojemu synkowi, który potrzebował właśnie takich zajęć. Widząc postępy i pozytywny wpływ terapii SI na jego funkcjonowanie sama zapragnęłam pomagać innym dzieciom, a wykształcenie psychologiczne pozwoliło mi na zdobycie tytułu Terapeuty i Diagnosty Integracji Sensorycznej. Podczas prowadzonych przeze mnie zajęć terapeutycznych staram się by realizowanie celów terapii było dla dziecka dobrą zabawą.</em></span></p>
+
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Maria Kujaszewska</b></span></h3>
+                                <p>
+                                <span class="text">Przygodę z integracją sensoryczną rozpoczęłam dzięki mojemu synkowi, który potrzebował właśnie takich zajęć. Widząc postępy i pozytywny wpływ terapii SI na jego funkcjonowanie sama zapragnęłam pomagać innym dzieciom, a wykształcenie psychologiczne pozwoliło mi na zdobycie tytułu Terapeuty i Diagnosty Integracji Sensorycznej. Podczas prowadzonych przeze mnie zajęć terapeutycznych staram się by realizowanie celów terapii było dla dziecka dobrą zabawą.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Maria.png">
+                            </div>
                         </div>
-                        <div class="column1">
-                            <p style="" class="text5"><span class="text5"><em><b>Justyna Kordowiecka – Żmijewska</b></em></span></p>
-                            <img class="image2" src="static/img/team/Justyna2.jpg">
-                            <p style="text-align:justify;text-indent: 40px;">
-                            <span class="text4"><em>Jestem psychologiem, seksuologiem, terapeutą par, psychoterapeutą integracyjnym w procesie szkolenia w Profesjonalnej Szkole Psychoterapii, prowadzonej przez Instytut Psychologii Zdrowia, posiadającego akredytację Polskiego Towarzystwa Psychologicznego, Polskiego Towarzystwa Psychiatrycznego i Polskiego Towarzystwa Psychoterapii Integracyjnej. Posiadam również kwalifikacje pedagogiczne. Doświadczenie zawodowe zdobywałam w placówkach: oświatowych, medycznych (Instytut Psychiatrii i Neurologii w Warszawie, Poradnia Seksuologiczna i Patologii Współżycia Centrum Psychoterapii SWZPZPOZ w Warszawie, Zakład Seksuologii Sądowej PTS), sądowych, organizacjach pożytku publicznego oraz
-                                w gabinetach prywatnych. Ponadto uczestniczę w opiniowaniu sądowo-seksuologicznym jako biegły (ad hoc). Zajmuje się również diagnostyką funkcji poznawczych, osobowości. Ukończyłam liczne szkolenia między innymi z terapii skoncentrowanej na rozwiązaniach, racjonalnej terapii zachowań czy elementów terapii poznawczo-behawioralnej.</em></span></p>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Patrycja Skorek</b></span></h3>
+                                <p>
+                                <span class="text">Jestem pedagogiem specjalnym oraz terapeutą integracji sensorycznej. Swoje wykształcenie zdobyłam na dwóch warszawskich uczelniach: Uniwersytecie Warszawskim oraz Akademii Pedagogiki Specjalnej, natomiast uprawnienia do prowadzenia diagnozy i terapii integracji sensorycznej uzyskałam dzięki studiom podyplomowym realizowanym przez Akademię Pedagogiki Specjalnej we współpracy z PSTIS. W Gabinecie Terapii Dziecięcej Amini realizuję zarówno diagnozę, jak i terapię integracji sensorycznej dzieci. W terapii dostosowuję metody pracy do indywidualnych potrzeb i możliwości dzieci, w tym szczególnie ze specjalnymi potrzebami rozwojowymi i edukacyjnymi.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Patrycja.png">
+                            </div>
                         </div>
-                        <div class="column1">
-                            <p style="" class="text3"><span class="text3"><em><b>Renata Wiśniewska</b></em></span></p>
-                            <img class="image1" src="static/img/team/renata.jpg">
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Aleksandra Żelichowska</b></span></h3>
+                                <p>
+                                <span class="text">Jestem absolwentką Uniwersytetu Kardynała Stefana Wyszyńskiego na kierunku psychologia, Wyższej Szkoły Nauk Społecznych w Lublinie na kierunku oligofrenopedagogika, Wyższej Szkoły Edukacji w Sporcie na kierunku Integracja Sensoryczna. Ponadto posiadam liczne kursy i szkolenia, w tym szczególnie wykorzystywane przeze mnie w czasie pracy z dziećmi to kurs Integracji Bilateralnej oraz szkolenie z zakresu Treningu Umiejętności Społecznych (TUS) stopień I i II. Praca z dziećmi jest moją pasją i spełnianiem marzeń zawodowych.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Aleksandra.png">
+                            </div>
                         </div>
-                        <div class="column1">
-                            <p style="" class="text5"><span class="text5"><em><b>Norbert Lewiński</b></em></span></p>
-                            <img class="image2" src="static/img/team/Norbert.png">
-                            <p style="text-align:justify;text-indent: 40px;">
-                            <span class="text4"><em>Jestem magistrem fizjoterapii posiadającym kilkunastoletnie doświadczenie w pracy zawodowej. Stale poszerzam wiedzę i umiejętności z zakresu Fizjfoterapii Ortopedycznej (Diagnostyka i leczenie) oraz Medycyny Sportowej. Mój profil przedstawia się następująco:</em></span></p>
-                            <em><ul style="margin-left: 35px;">
-                                <li class="text6">Absolwent Wydziału Rehabilitacji AWF Warszawa</li>
-                                <li class="text6">Specjalista Ortopedycznej Terapii Manualnej (OMPT)</li>
-                                <li class="text6">Międzynarodowy Terapeuta Medycyny Ortopedycznej wg Cyriax'a</li>
-                                <li class="text6">Dyplomowany Terapeuta Koncepcji PNF</li>
-                                <li class="text6">Terapeuta Metody Mc'Kenzie</li>
-                                <li class="text6">Medyczny Trening Funkcjonalny</li>
-                                <li class="text6">Rehabilitacja pooperacyjna (operacje kręgosłupa, artroskopie kończyn, endoprotezoplastyka)</li>
-                                <li class="text6">Fizjoterapia pourazowa (po złamaniach, zespoleniach chirurgicznych, skręceniach)</li>
-                            </ul></em>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Justyna Kordowiecka – Żmijewska</b></span></h3>
+                                <p>
+                                <span class="text">Jestem psychologiem, seksuologiem, terapeutą par, psychoterapeutą integracyjnym w procesie szkolenia w Profesjonalnej Szkole Psychoterapii, prowadzonej przez Instytut Psychologii Zdrowia, posiadającego akredytację Polskiego Towarzystwa Psychologicznego, Polskiego Towarzystwa Psychiatrycznego i Polskiego Towarzystwa Psychoterapii Integracyjnej. Posiadam również kwalifikacje pedagogiczne. Doświadczenie zawodowe zdobywałam w placówkach: oświatowych, medycznych (Instytut Psychiatrii i Neurologii w Warszawie, Poradnia Seksuologiczna i Patologii Współżycia Centrum Psychoterapii SWZPZPOZ w Warszawie, Zakład Seksuologii Sądowej PTS), sądowych, organizacjach pożytku publicznego oraz w gabinetach prywatnych. Ponadto uczestniczę w opiniowaniu sądowo-seksuologicznym jako biegły (ad hoc). Zajmuje się również diagnostyką funkcji poznawczych, osobowości. Ukończyłam liczne szkolenia między innymi z terapii skoncentrowanej na rozwiązaniach, racjonalnej terapii zachowań czy elementów terapii poznawczo-behawioralnej.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Justyna.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Renata Wiśniewska</b></span></h3>
+                                <p>
+                                <span class="text">Jestem dyplomowaną fizjoterapeutką specjalizującą się w rehabilitacji dzieci. Wiedzę medyczną zdobyłam na WUM a pogłębiłam ją praktyką oraz szkoleniami. Pracując od wielu lat, obserwuję moich pacjentów od wieku niemowlęcego aż do nastolatków i sprawia mi to wielką satysfakcję. Widzę jak wiele daje prosty instruktaż pielęgnacji i propozycje kilku zabaw z niemowlakiem oraz jak włączenie odpowiedniej dla wieku aktywności ruchowej zapobiega wielu wadom postawy. Mój profil przedstawia się następująco:
+    • FITS
+    • Trójpłaszczynowa Manualna Terapia Stóp
+    • Kinesiotaping
+    • Podejście osteopatyczne w pediatrii
+    • Diagnostyka Metodą Prechtla
+    • Terapia Neurotaktylna
+    • Elektrostymulacja logopedyczna
+    • SI
+    • PNF w pediatrii.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Renata.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3 class="header"><span class="header"><b>Błażej Goździkiewicz</b></span></h3>
+                                <p>
+                                <span class="text">Jestem specjalistą w leczeniu dysfunkcji nerwowo-mięśniowo-szkieletowych z ponad 20-letnim doświadczeniem. Mój profil przedstawia się następująco:
+    • absolwent Fizjoterapii na Akademii Wychowania Fizycznego w Krakowie
+    • absolwent cyklu szkoleń OMT
+    • ortopedyczna terapia manualna
+    • certyfikowany terapeuta w koncepcji Kaltenborna i Evjentha
+    • certyfikowany terapeuta koncepcji OM Cyriax
+    • certyfikowany terapeuta metody PNF
+    • certyfikowany terapeuta metody McKenzie
+    • diagnozowania i leczenia zespołów bólowych kręgosłup.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Blazej.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Katarzyna Orłowska-Kisiel</b></span></h3>
+                                <p>
+                                <span class="text">Jestem absolwentką studiów magisterskich na kierunku fizjoterapia na Akademii Wychowania Fizycznego w Warszawie. Podczas swoich studiów odbyłam praktyki na wielu oddziałach szpitalnych, specjalizujących się w różnych dziedzinach medycyny, co pozwoliło mi zdobyć bogate doświadczenie w zakresie fizjoterapii. Obecnie pracuje z dziećmi, a swoje umiejętności pogłębiam dzięki kursom: mobilizacja i plastrowanie dynamiczne w pediatrii, podejście osteopatyczne w pediatrii, terapia neurotaktylna, diagnostyka metodą Prechtla, kinesiotaping. Dodatkowo jestem terapeuta integracji sensorycznej.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Kasia.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Klaudyna Zawadka</b></span></h3>
+                                <p>
+                                <span class="text">Jestem absolwentką Uniwersytetu Warszawskiego (filologia polska), Akademii Pedagogiki Specjalnej im. Marii Grzegorzewskiej (pedagogika przedszkolna, logopedia) oraz Uniwersytetu Humanistycznospołecznego SWPS (neurologopedia). Brałam udział w wielu  kursach doskonalenia zawodowego dla logopedów, neurologopedów z zakresu jąkania, skróconych wędzidełek jamy ustnej, terapii miofunkcjonalnej, emisji głosu.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Klaudyna.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Aneta Bala</b></span></h3>
+                                <p>
+                                <span class="text">Ponad dwadzieścia lat pracuję jako nauczyciel matematyki, trener TUS i jako oligofrenopedagog wspomagam uczniów o specjalnych potrzebach edukacyjnych. Ukończyłam pięcioletnie studia magisterskie z matematyki i informatyki, studia w zakresie edukacji i rehabilitacji osób z niepełnosprawnością intelektualną, trener TUS I i II stopnia oraz wiele kursów i szkoleń w obszarze zaburzeń dzieci ze spektrum autyzmu. Jestem osobą ambitną, ciągle szukam nowych wyzwań i innowacyjnych metod nauczania matematyki. Podczas swoich doświadczeń zawodowych nauczyłam się odpowiedzialności, rzetelności, a także cierpliwości.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Aneta.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Karolina Jastrzębska</b></span></h3>
+                                <p>
+                                <span class="text">Jestem absolwentką Akademii Pedagogiki Specjalnej na kierunkach: pedagogika w specjalności wychowanie żłobkowe i przedszkolne oraz pedagogika specjalna w specjalności edukacja i rehabilitacja osób z niepełnosprawnością intelektualną. Ukończyłam także studia podyplomowe na kierunku Diagnoza i terapia dziecka z zaburzeniami Integracji Sensorycznej. Na co dzień pracuję w szkole podstawowej z uczniami ze specjalnymi potrzebami edukacyjnymi. Cele, przebieg zajęć oraz metody pracy dostosowuję do indywidualnych potrzeb i możliwości dzieci. Praca z dziećmi choć często trudna i wymagająca, daje radość i uczy jak cieszyć się z każdego, nawet z najmniejszego postępu. Jest to zdecydowanie moja pasja i nie zamieniłabym pracy z dziećmi na żadną inną.</span></p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/Karolina.png">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,7 +222,7 @@
         </section>
     </main>
     <footer>
-        <p style="background-color:black;opacity:50%"> &copy;Ofey&Bart </p>
+        <p> &copy;Ofey&Bart </p>
     </footer>
 
 

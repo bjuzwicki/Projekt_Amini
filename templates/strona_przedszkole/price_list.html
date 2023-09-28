@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oferta</title>
+    <title>Amini - Oferta</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -24,73 +23,44 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-    <nav class="navbar navbar-expand-lg fixed-top shadow-bg navbar-default navbar-fixed-top" id="navbar" style="padding:20px 30px" >
-
-        <a class="navbar-brand" href="/#">
-        <img src="/static/img/logoamini.png" alt="Amini" width="240" id="logo" height="60">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-default navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="/">
+            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
         </a>
+        <div class="navbar-collapse navbar-brand">
+            <div class="nav ml-auto menu menutext1">
+                <c>&phone; tel: +48 789 274 847</c>
+                <c>&#9993; recepcja@amini.com.pl</c>
+            </div>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"style="font-size: 1.5em;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="nav nav-pills ml-auto menu menutext1">
+            <div class="nav ml-auto menu menutext1">
                 <a class="nav-item nav-link" href="/#">Strona główna</a>
                 <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
                 <a class="nav-item nav-link" href="/galeria">Galeria</a>
                 <a class="nav-item nav-link" href="/zespol">Zespół</a>
-                <a class="nav-item nav-link" href="/cennik">Oferta</a>
-                <a class="nav-item nav-link" href="/#contact">Kontakt</a>
+                <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+                <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
             </div>
         </div>
     </nav>
     <main>
-        <section id="offer" class="scroll-fix">
-            <div class="jumbotron jumbotron-fluid">
+        <section id="offer_list" class="scroll-fix">
+            <div class="jumbotron">
                 <div class="wrapper">
-                    <h2 style="margin-top: 80px; font-size:44px;">Oferta</h2>
+                    <h2 style="margin-top: 100px; font-size:40px;">Oferta</h2>
                     <div class="underline"></div>
-                    <table class="table table-hover" style="table-layout: auto; background-color: rgba(242, 242, 242,0.8);">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nazwa specjalizacji</th>
-                                <th scope="col">Cykl</th>
-                                <th scope="col">Cena (zł)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Terapia ręki</td>
-                                <td>3 spotkania</td>
-                                <td>XXX</td>
-                            </tr>
-                            <tr>
-                                <td>Integracja sensoryczna</td>
-                                <td>3 spotkania</td>
-                                <td>XXX</td>
-                            </tr>
-                            <tr>
-                                <td>Terapia manualna</td>
-                                <td>3 spotkania</td>
-                                <td>XXX</td>
-                            </tr>
-                            <tr>
-                                <td>Terapia behawioralno-poznawcza</td>
-                                <td>3 spotkania</td>
-                                <td>XXX</td>
-                            </tr>
-                            <tr>
-                                <td>Psychologia dziecięca</td>
-                                <td>3 spotkania</td>
-                                <td>XXX</td>
-                            </tr>
-                            <tr>
-                                <td>Pomoc w nauce</td>
-                                <td>3 spotkania</td>
-                                <td>XXX</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="row">
+                        <div class="row-body" >
+                            <div class="column">
+                                <img src="static/img/cennik.png" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="offer-text wrapper text-center">
                     <p4 class="offer-info">Opis specjalizacji znajdziesz <a href="/specjalizacje">tutaj</a>.</p4>
@@ -99,7 +69,7 @@
         </section>
     </main>
     <footer>
-        <p style="background-color:#686868;opacity:50%"> &copy;Ofey&Bart </p>
+        <p> &copy;Ofey&Bart </p>
     </footer>
 
 

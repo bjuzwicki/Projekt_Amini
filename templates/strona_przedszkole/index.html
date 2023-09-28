@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amini-Strona Główna</title>
+    <title>Amini</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -23,10 +22,16 @@
     <link rel="stylesheet" href="static/css/all.css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
-    <nav class="navbar navbar-expand-lg fixed-top shadow-bg navbar-default navbar-fixed-top" id="navbar" style="padding:20px 30px">
-        <a class="navbar-brand" href="/#">
-        <img src="/static/img/logoamini.png" alt="Amini" width="240" id="logo" height="60">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-default navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="/">
+            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
         </a>
+        <div class="navbar-collapse navbar-brand">
+            <div class="nav ml-auto menu menutext1">
+                <c>&phone; tel: +48 789 274 847</c>
+                <c>&#9993; recepcja@amini.com.pl</c>
+            </div>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"style="font-size: 1.5em;"></i>
@@ -37,22 +42,23 @@
                 <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
                 <a class="nav-item nav-link" href="/galeria">Galeria</a>
                 <a class="nav-item nav-link" href="/zespol">Zespół</a>
-                <a class="nav-item nav-link" href="/cennik">Oferta</a>
-                <a class="nav-item nav-link" href="#contact">Kontakt</a>
+                <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+                <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
             </div>
         </div>
     </nav>
     <header id="home">
         <div class="hero-img">
-            <div class="hero-shadow"></div>
-            <div class="hero-text" style="padding:30px 30px;position: center;">
-                <p class="os-animation" data-animation='bounceInRight' data-delay='.5s'>
-                    <span class="text1"><em>„Dziecko, jako najważniejsza inwestycja współczesnych rodziców,
-                    powinno stanowić centrum wszelkich starań w procesie tworzenia optymalnych warunków do jego rozwoju, edukacji i funkcjonowania w społeczeństwie."</em></font></span>
-                    <span class="author"><br>Jolanta Rozmanowska</span>
+            <div class="hero-text">
+                <p class="os-animation" data-animation='bounceInLeft' data-delay='.2s' >
+                    <span class="text1">
+                        <em>„Dziecko, jako najważniejsza inwestycja współczesnych rodziców, powinno stanowić centrum wszelkich starań w procesie tworzenia optymalnych warunków do jego rozwoju, edukacji i funkcjonowania w społeczeństwie.”</em>
+                    </span>
                 </p>
-
-            </a>
+                <p1 class="os-animation" data-animation='bounceInRight' data-delay='.2s'>
+                    <span class="author">mgr Jolanta Rozmanowska</span>
+                    <span class="text12"><br>terapeuta SI, oligofrenopedagog, nauczyciel edukacji wczesnoszkolnej, pedagog</span>
+                </p1>
             </div>
             <div style="center">
                 <a href="#aboutus"><i class="fas fa-chevron-down center"></i></a>
@@ -69,7 +75,6 @@
                         <div class="col-sm-6 col-md-12">
                             <p class="text3"><span class="text3"><em><b>Szanowni Państwo!</b></em></span></p>
                             <div class="square">
-                                <!--<img class="image1" src="static/img/team/jola.jpg">-->
                                 <p style="text-align:justify">
                                 <span class="text2"><em>Inspiracją do utworzenia Gabinetu Terapii Dziecięcej AMINI były moje dzieci (stąd też jego nazwa, która stanowi połączenie pierwszych liter imion Amelka i Nikodem) oraz dzieci, z którymi pracuję od kilkunastu lat. Zdobyte doświadczenie, połączone
                                 z pasją, jak również wiedza pozostałych specjalistów gabinetu, stanowią doskonałą bazę do pomocy w obszarze terapeutycznym, edukacyjnym oraz psychologicznym. Jestem przekonana, że Nasz zespół przyczyni się do podniesienia poziomu funkcjonowania Państwa dzieci, a podjęcie wspólnego wysiłku umożliwi rozwiązanie wielu problemów, które budzą Państwa niepokój. Pamiętajmy, że inwestując w Nasze dzieci, inwestujemy w ich przyszłość!
@@ -88,20 +93,11 @@
         </section>
         <section id="specialization" class="scroll-fix">
             <div class="jumbotron jumbotron-fluid">
-                <div class="about-shadow"></div>
                 <div class="wrapper">
-                    <h2>Specjalizacje</h2> <!-- os-animation visibility -->
+                    <h2>Specjalizacje</h2>
                     <div class="underline"></div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-4 text-center about-hero-item">
-                            <h3>Terapia ręki</h3>
-                            <hr>
-                            <p>Nieprawidłowości rozwojowe dziecka związane z obniżonymi zdolnościami manualnymi,
-                                wymagają pomocy specjalisty. Pamiętajmy, że sprawność rąk decyduje o właściwym poziomie
-                                funkcjonowania każdego człowieka. To właśnie dzięki tym kończynom jesteśmy w stanie
-                                wykonać wiele trudnych i złożonych czynności. </p>
-                        </div>
-                        <div class="col-sm-6 col-md-4 text-center about-hero-item">
+                        <div class="col-sm-6 col-md-4 text-center">
                             <h3>Integracja sensoryczna</h3>
                             <hr>
                             <p>Niewłaściwe zachowanie dziecka, podwyższona lub obniżona wrażliwość na bodźce, brak
@@ -109,18 +105,26 @@
                                 niewłaściwy poziom aktywności ruchowej to symptomy, które stanowią o konieczności
                                 skorzystania z pomocy terapeuty.</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 text-center about-hero-item">
+                        <div class="col-sm-6 col-md-4 text-center">
+                            <h3>Logopedia/Neurologopedia</h3>
+                            <hr>
+                            <p>Rozwój języka i mowy rozpoczyna się od początku życia dziecka. Dlatego tak ważna jest wczesna diagnostyka i interwencja neurologopedyczna.
+                                Dzięki profilaktyce zaburzeń rozwoju mowy można zapobiegać nieprawidłowościom oraz odpowiednio stymulować rozwój mowy już od narodzin.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center">
                             <h3>Terapia manualna</h3>
                             <hr>
-                            <p>Metoda fizjoterapeutyczna, w której wykorzystując ręce terapeuty uzyskujemy efekt przywrócenia prawidłowych funkcji w zaburzonych strukturach anatomicznych (m.in. mięśniach, stawach, strukturach nerwowych)..</p>
+                            <p>Metoda fizjoterapeutyczna, w której wykorzystując ręce terapeuty uzyskujemy efekt przywrócenia prawidłowych funkcji w zaburzonych strukturach anatomicznych (m.in. mięśniach, stawach, strukturach nerwowych). W trakcie terapii oceniany jest wygląd i konsystencja tkanek ciała, zakres i jakość ruchu elementów kostnych oraz charakter ich oporów pracy.</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 text-center about-hero-item">
-                            <h3>Terapia behawioralno-poznawcza</h3>
+                        <div class="col-sm-6 col-md-4 text-center">
+                            <h3>Fizjoterapia dziecięca</h3>
                             <hr>
-                            <p>Terapia behawioralna rozwija wszystkie sfery deficytowe oraz kładzie nacisk na
-                                redukowanie zachowań zakłócających naukę, kształtując tym samym zachowania pożądane.</p>
+                            <p>Fizjoterapia wieku rozwojowego, czyli okresu życia człowieka, w którym zachodzą bardzo dynamiczne zmiany.
+                                Zmiany te są tak bardzo ze sobą powiązane, że trudno odróżnić rozwój ruchowy od emocjonalnego czy intelektualnego, dlatego używa się pojęcia rozwój psychomotoryczny.
+                                A zatem fizjoterapia dziecięca to także praca na wielu płaszczyznach: ciągła obserwacja rozwoju, pomoc w wykonywaniu ruchów, ocena możliwości,
+                                wymagań stawianych dziecku przez otoczenie.</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 text-center about-hero-item">
+                        <div class="col-sm-6 col-md-4 text-center">
                             <h3>Psychologia dziecięca</h3>
                             <hr>
                             <p>Rodzice często spotykają się z różnymi problemami wychowawczymi
@@ -129,7 +133,7 @@
                                 lub oduczyło tych negatywnych. W tego typu problemach może pomóc rodzicom psycholog dziecięcy.
                             </p>
                         </div>
-                        <div class="col-sm-6 col-md-4 text-center about-hero-item">
+                        <div class="col-sm-6 col-md-4 text-center">
                             <h3>Pomoc w nauce</h3>
                             <hr>
                             <p>Problemy w nauce często stanowią wyzwania, których rozwiązanie wykracza poza kompetencje i możliwości rodziców. Nasze działania ukierunkowane są na niesienie pomocy dzieciom z różnego
@@ -151,16 +155,13 @@
                 <div class="wrapper">
                     <div class="card-deck d-lg-none gallery-carousel">
                         <div class="card">
-                            <img src="static/img/zdj_slajder_1.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Sensoryczny plac zabaw</strong></h5>
-                            </div>
+                            <img src="static/img/image1.png" class="card-img-top">
                         </div>
                         <div class="card">
-                            <img src="static/img/zdj_slajder_2.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Sala fizjoterapii</strong></h5>
-                            </div>
+                            <img src="static/img/image5.png" class="card-img-top">
+                        </div>
+                        <div class="card">
+                            <img src="static/img/image7.png" class="card-img-top">
                         </div>
                     </div>
                     <!-- GALERIA NA DESKTOPY -->
@@ -168,18 +169,22 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="static/img/zdj_slajder_1.jpg" class="d-block w-100">
+                                <img src="static/img/image1.png" class="d-block w-100">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5><strong>Sensoryczny plac zabaw</strong></h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="static/img/zdj_slajder_2.jpg" class="d-block w-100">
+                                <img src="static/img/image5.png" class="d-block w-100">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5><strong>Sala fizjoterapii</strong></h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/img/image7.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                         </div>
@@ -200,128 +205,67 @@
                 </div>
             </div>
         </section>
-
-         <section id="team" class="scroll-fix">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="team-shadow"></div>
-                <h2>Zespół</h2>
-                <div class="underline"></div>
-                <div class="card-deck wrapper team-carousel">
-                    <div class="card">
-                        <img src="static/img/team/jola.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Jolanta Rozmanowska</h5>
-                            <p class="card-text">Diagnostyka i terapia z zakresu Integracji Sensorycznej oraz Terapii Poznawczo-Behawioralnej.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="static/img/team/Marta.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Marta Staniek</h5>
-                            <p class="card-text">Diagnostyka i terapia z zakresu Integracji Sensorycznej.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="static/img/team/Maria.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Maria Kujaszewska</h5>
-                            <p class="card-text">Diagnostyka i terapia z zakresu Integracji Sensorycznej.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="static/img/team/Justyna2.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Justyna Kordowiecka-Żmijewska</h5>
-                            <p class="card-text">Psychologia, pedagogika, psychoterapeutyka integracyjna.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="static/img/team/renata.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Renata Wiśniewska</h5>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="static/img/team/Norbert.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Norbert Lewiński</h5>
-                            <p class="card-text">Fizjoterapia, rehabilitacja, terapeutyka.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-text wrapper text-center">
-                    <p4 class="team-info">Poznaj nas bliżej, klikając <a href="/zespol">tutaj</a>.</p4>
-                </div>
-            </div>
-        </section>
         <section id="offer" class="scroll-fix">
             <div class="jumbotron jumbotron-fluid">
                 <h2>oferta</h2>
                 <div class="underline"></div>
-                <div class="price-wrap row text-center justify-content-center "> <!-- os-animation visibility -->
+                <div class="price-wrap row text-center justify-content-center ">
                     <div class="col-md-6 col-xl-4">
                         <div class="price-box">
                             <h3>Integracja sensoryczna</h3>
                             <hr>
-                            <p class="priceheader">Cykl 3 spotkań:</p>
-                            <p class="price">XXX zł</p>
+                            <p class="priceheader">Cykl 3 spotkań</p>
+                            <p class="price">360 zł</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
                         <div class="price-box">
-                            <h3>Terapia ręki</h3>
+                            <h3>Terapia logopedyczna</h3>
                             <hr>
-                            <p class="priceheader">Cykl 3 spotkań:</p>
-                            <p class="price">XXX zł</p>
+                            <p class="priceheader">60 min</p>
+                            <p class="price">120 zł</p>
                             <br>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
                         <div class="price-box">
-                            <h3>Pomoc w nauce</h3>
+                            <h3>Fizjoterapia dziecięca</h3>
                             <hr>
-                            <p class="priceheader">Cykl 3 spotkań:</p>
-                            <p class="price">XXX zł</p>
+                            <p class="priceheader">30 min</p>
+                            <p class="price">120 zł</p>
                         </div>
                     </div>
                 </div>
                 <div class="offer-text wrapper text-center">
                     <p class="offer-info">Sprawdź nasz <a href="/cennik">pełen cennik</a> usług.
-                        <a href="#contact">Skontaktuj się</a> z nami i ustal warunki indywidualne!</p> <!-- /formularz_kontaktowy -->
+                        <a href="/kontakt">Skontaktuj się</a> z nami i ustal warunki indywidualne!</p> <!-- /formularz_kontaktowy -->
                 </div>
             </div>
         </section>
-
         <section id="contact" class="scroll-fix">
             <div class="jumbotron jumbotron-fluid">
-                <div class="contact-shadow"></div>
-
                 <h2>Kontakt</h2>
                 <div class="underline"></div>
-
                 <div class="wrapper row text-center contact-us">
                     <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
                         <h3>Gabinet Terapii Dziecięcej</h3>
-                        <p id="contact-p2">Wieliszew 05-135</p>
-                        <p id="contact-p3">ul.Podgórna 3d</p>
-                        <p id="contact-p4">tel : +48 789 274 847</p>
-                        <p id="contact-p5">recepcja@amini.com.pl</p>
+                        <p id="contact-p2">ul.Podgórna 3d</p>
+                        <p id="contact-p3">Wieliszew 05-135</p>
+                        <p id="contact-p4">&phone; tel: +48 789 274 847</p>
+                        <p id="contact-p5">&#9993; recepcja@amini.com.pl</p>
                     </div>
-
                     <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
                         <h3>social media</h3>
                         <div class="social-media">
                             <a href="https://www.facebook.com/Amini-Gabinet-Terapii-Dziecięcej-275343516646097/?ref=page_internal"><i class="fab fa-facebook-square"></i></a>
                         </div>
                     </div>
-
                     <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
+                        <h3>Mapa</h3>
                         <div class="map-responsive">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2431.962448823631!2d20.963308!3d52.443595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eb8eb045befe9%3A0x157f538d8772c8fd!2sPodg%C3%B3rna%203%2C%2005-135%20Wieliszew!5e0!3m2!1spl!2spl!4v1598816804490!5m2!1spl!2spl"
-                                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.124304077839!2d20.96318806263872!3d52.44333213807962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eb97766d795a1%3A0x537ea18f368f9178!2sPodg%C3%B3rna%203d%2C%2005-135%20Wieliszew!5e0!3m2!1spl!2spl!4v1691599006119!5m2!1spl!2spl"
+                                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -329,7 +273,7 @@
         </section>
     </main>
     <footer>
-        <p style="background-color:black;opacity:50%"> &copy;Ofey&Bart </p>
+        <p> &copy;Ofey&Bart </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

@@ -30,19 +30,19 @@ function scrollFunction()
 {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
   {
-    document.getElementById("navbar").style.transition = "padding 1s";
-    document.getElementById("navbar").style.padding = "8px 30px";
-    document.getElementById("logo").style.transition = "width 1s, height 1s";
-    document.getElementById("logo").style.width = "200px";
-    document.getElementById("logo").style.height = "40px";
+    document.getElementById("navbar").style.transition = "padding 0.8s";
+    document.getElementById("navbar").style.padding = "5px 80px";
+    document.getElementById("logo").style.transition = "width 0.8s, height 0.8s";
+    document.getElementById("logo").style.width = "250px";
+    document.getElementById("logo").style.height = "80px";
   }
   else
   {
-    document.getElementById("navbar").style.transition = "padding 1s";
-    document.getElementById("navbar").style.padding = "20px 30px";
-    document.getElementById("logo").style.transition = "width 1s, height 1s";
-    document.getElementById("logo").style.width = "240px";
-    document.getElementById("logo").style.height = "60px";
+    document.getElementById("navbar").style.transition = "padding 0.8s";
+    document.getElementById("navbar").style.padding = "5px 80px";
+    document.getElementById("logo").style.transition = "width 0.8s, height 0.8s";
+    document.getElementById("logo").style.width = "300px";
+    document.getElementById("logo").style.height = "100px";
   }
 }
 
