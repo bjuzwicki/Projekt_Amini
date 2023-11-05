@@ -16,12 +16,15 @@ header .hero-text p {
 
 #offer .offer-info {
   font-size: 28px;
+  color: black;
+  margin-top: 30px;
 }
 
 #offer_list .offer-info {
   font-size: 28px;
+  color: black;
+  margin-top: 30px;
 }
-
 
 .author {
  font-family: Calibri;
@@ -35,8 +38,8 @@ header .hero-text p {
 }
 
 .menutext1 {
-    font-family: "Calibri";
-    font-size: 20px;
+    font-family: Calibri;
+    font-size: 18px;
     text-transform : none;
 }
 
@@ -49,19 +52,24 @@ header .hero-text p {
 .text2 {
  font-family: Calibri;
  font-size: 30px;
- opacity: 100%;
 }
 
 #specialization .specialization-info {
   font-size: 28px;
+  color: black;
+  margin-top: 30px;
 }
 
-#specialization .specialization-text {
-  margin-top: 30px;
+#specialization_list .specialization-info {
+  font-size: 28px;
+  color: black;
+  margin-top: 50px;
 }
 
 #gallery .gallery-info {
   font-size: 28px;
+  color: black;
+  margin-top: 30px;
 }
 
 #gallery .gallery-text {
@@ -70,16 +78,13 @@ header .hero-text p {
 
 #team .team-info {
   font-size: 28px;
+  color: black;
+  margin-top: 30px;
 }
 
 #team .team-text {
   margin-top: 40px;
   color: #ddd;
-}
-
-.text2 {
- font-family: Calibri;
- font-size: 30px;
 }
 
 .text3 {

@@ -76,6 +76,7 @@ header .fa-chevron-down {
  font-family: Calibri;
  font-size: 36px;
  color: black;
+ opacity: 80%;
 }
 
 .text12 {
@@ -87,6 +88,8 @@ header .fa-chevron-down {
 .text2 {
  font-family: Calibri;
  font-size: 30px;
+ text-indent: 60px;
+ text-align: justify;
 }
 
 .text3 {
@@ -129,25 +132,21 @@ header .fa-chevron-down {
 }
 
 .menutext1 {
-    font-family: "Calibri";
+    font-family: Calibri;
     font-size: 20px;
     text-transform : none;
 }
 
 #specialization_list .specialization-info {
   font-size: 28px;
-}
-
-#specialization_list .specialization-text {
+  color: black;
   margin-top: 30px;
 }
 
 #gallery .gallery-info {
   font-size: 28px;
-}
-
-#gallery .gallery-text {
-  margin-top: 40px;
+  color: black;
+  margin-top: 60px;
 }
 
 #team .team-info {

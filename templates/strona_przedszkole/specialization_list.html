@@ -23,11 +23,11 @@
     <link rel="stylesheet" href="static/css/all.css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-default navbar-fixed-top" id="navbar">
-        <a class="navbar-brand" href="/">
+     <nav class="navbar navbar-expand-sm fixed-top navbar-light navbar-default d-flex justify-content-center d-none" id="navbar" style="width: 100%;">
+        <a class="navbar-brand" id="brand" href="/">
             <img src="/static/img/logoamini.png" alt="Amini" id="logo">
         </a>
-        <div class="navbar-collapse navbar-brand">
+        <div class="navbar-data" id="data">
             <div class="nav ml-auto menu menutext1">
                 <c>&phone; tel: +48 789 274 847</c>
                 <c>&#9993; recepcja@amini.com.pl</c>
@@ -35,12 +35,12 @@
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"style="font-size: 1.5em;"></i>
+            <i class="fas fa-bars"style="font-size: 2em;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="nav ml-auto menu menutext1">
                 <a class="nav-item nav-link" href="/#">Strona główna</a>
-                <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
+                <a class="nav-item nav-link" style="border-bottom: 3px solid black;" href="/specjalizacje">Specjalizacje</a>
                 <a class="nav-item nav-link" href="/galeria">Galeria</a>
                 <a class="nav-item nav-link" href="/zespol">Zespół</a>
                 <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
@@ -52,12 +52,12 @@
         <section id="specialization_list">
             <div class="jumbotron">
                 <div class="wrapper">
-                    <h2 style="margin-top: 100px; font-size:40px;">Specjalizacje</h2>
+                    <h2>Specjalizacje</h2>
                     <div class="underline"></div>
                     <div class="row">
                         <div class="row-body">
                             <div class="column">
-                                <div class="text-justify" style="padding: 10px 0px">
+                                <div class="text-justify" style="padding: 10px 10px">
                                     <h3><b>Integracja sensoryczna</b></h3>
                                     <hr>
                                     <p style="text-indent: 40px;">Bardzo często zdarza się, że dzieci z dysfunkcjami w obszarze integracji sensorycznej, określane są jako "źle wychowane". Nic bardziej mylnego, ponieważ są to problemy, które wymagają interwencji specjalisty. Niewłaściwe zachowanie dziecka, podwyższona lub obniżona wrażliwość na bodźce, brak umiejętności koncentracji, zaburzenia w koordynacji ruchowej, opóźniony rozwój mowy oraz niewłaściwy poziom aktywności ruchowej to symptomy, które stanowią o konieczności skorzystania z pomocy terapeuty. Problem ten dotyka dzieci w normie intelektualnej z trudnościami w uczeniu się, z niepełnosprawnością intelektualną, autyzmem, nadpobudliwością psychoruchową, jak również mózgowym porażeniem oraz dzieci dotkniętych innymi problemami rozwojowymi. Brak właściwej terapii będzie skutkował w przyszłości problemami w uczeniu się, niewłaściwym zachowaniu oraz zaburzeniami rozwoju społeczno-emocjonalnym, co w konsekwencji utrudni lub wręcz uniemożliwi właściwe funkcjonowanie w społeczeństwie.</p>
@@ -122,7 +122,7 @@
                                 <div class="text-justify" style="padding: 10px 0px">
                                     <h3><b>PSYCHOLOGIA DZIECIĘCA</b></h3>
                                     <hr>
-                                    <p style="text-indent: 40px;">Rodzice często spotykają się z różnymi problemami wychowawczymi lub edukacyjnymi u swoich dzieci.Niestety często sami rodzice nie wiedzą jak postępować z dzieckiem, by nauczyło się pożądanych społecznie zachowań lub oduczyło tych negatywnych. W tego typu problemach może pomóc rodzicom psycholog dziecięcy. Psycholog dziecięcy może pomóc rodzicom rozwiązać ich problemy wychowawcze z dziećmi, natomiast w odniesieniu do dzieci są to najczęściej działania edukacyjne, dotyczące problemów z nauką, jak i terapeutyczne wiążące się z emocjami i sposobem radzenia sobie z nimi.</p>
+                                    <p style="text-indent: 40px;">Rodzice często spotykają się z różnymi problemami wychowawczymi lub edukacyjnymi u swoich dzieci. Niestety często sami rodzice nie wiedzą jak postępować z dzieckiem, by nauczyło się pożądanych społecznie zachowań lub oduczyło tych negatywnych. W tego typu problemach może pomóc rodzicom psycholog dziecięcy. Psycholog dziecięcy może pomóc rodzicom rozwiązać ich problemy wychowawcze z dziećmi, natomiast w odniesieniu do dzieci są to najczęściej działania edukacyjne, dotyczące problemów z nauką, jak i terapeutyczne wiążące się z emocjami i sposobem radzenia sobie z nimi.</p>
                                     <p><span><b>Rodzicu, jeżeli zauważasz, że Twoje dziecko:</b></span></p>
                                     <ul style="margin-left: 35px;">
                                         <li>przejawia zachowania związane z lękiem lub agresją,</li>
@@ -348,10 +348,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="specialization-text wrapper text-center">
-                        <p4 class="specialization-info">Cennik specjalizacji znajdziesz <a href="/cennik">tutaj</a>.</p4>
+                    <div class="text-center">
+                        <p2 class="specialization-info">Cennik specjalizacji znajdziesz <a href="/cennik">tutaj</a>.</p2>
                     </div>
                 </div>
+            </div>
+            <div class="cookie-container" id="cookieContainer">
+                <p class="cookie-text">Ta strona używa plików cookie. Klikając "Akceptuj", zgadzasz się na ich użycie.</p>
+                <button class="cookie-btn" id="cookieAccept">Akceptuj</button>
             </div>
         </section>
     </main>

@@ -16,13 +16,22 @@
 
 .text1 {
  font-family: Calibri;
- font-size: 22px;
- opacity: 70%;
+ font-size: 18px;
+ color: black;
+ opacity: 80%;
+}
+
+.text12 {
+ font-family: Calibri;
+ font-size: 16px;
+ opacity: 80%;
 }
 
 .author {
  font-family: Calibri;
- font-size: 20px;
+ font-size: 18px;
+ text-align: right;
+ font-weight: bold;
 }
 
 .menu {
@@ -32,53 +41,51 @@
 
 .menutext1 {
     font-family: Calibri;
-    font-size: 18px;
+    font-size: 12px;
     text-transform : none;
 }
 
 #offer .offer-info {
   font-size: 18px;
+  margin-top: 30px;
 }
 
 #offer_list .offer-info {
   font-size: 18px;
+  color: black;
+  margin-top: 30px;
 }
 
-#specialization .specialization-info {
+#specialization_list .specialization-info {
   font-size: 18px;
+  color: black;
+  margin-top: 30px;
 }
 
 #team .team-info {
   font-size: 18px;
+  color: black;
+  margin-top: 30px;
 }
 
 #gallery .gallery-info {
   font-size: 18px;
-}
-
-#team .team-text {
-  margin-top: 20px;
-  color: #ddd;
-}
-
-#gallery .gallery-text {
-  margin-top: 20px;
-}
-
-#specialization .specialization-text {
-  margin-top: 20px;
+  color: black;
+  margin-top: 30px;
 }
 
 .text2 {
  font-family: Calibri;
- text-align: center;
- font-size: 18px;
+ font-size: 16px;
+ text-indent: 30px;
+ text-align: justify;
 }
 
 .text3 {
  font-family: Calibri;
  text-align: center;
- font-size: 21px;
+ font-size: 18px;
+
 }
 
 .text4 {

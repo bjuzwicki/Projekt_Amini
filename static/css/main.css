@@ -55,7 +55,7 @@ h3 {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
-  background-color: #000;
+  background-color: black;
 }
 
 .scroll-fix::before {
@@ -113,13 +113,20 @@ nav a:hover {
     background-color: #fff;
 }
 
+.navbar .navbar-data
+{
+    padding: 0px 120px;
+}
+
+c
+{
+    font-size: 5px;
+}
+
 .navbar img
 {
     width: 300px;
     height: 100px;
-}
-
-.nav .navbar-bran d {
 }
 
 header {
@@ -232,11 +239,15 @@ header .fa-chevron-down {
 {
     color: black;
     font-weight: bold;
+    text-decoration: underline;
 }
 
-#specialization .jumbotron p4
+#specialization .jumbotron p
 {
-    color: #000;
+    font-family: Calibri;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 #specialization_list .jumbotron {
@@ -244,6 +255,13 @@ header .fa-chevron-down {
   background-size: cover;
   z-index: -1;
   box-sizing: border-box;
+}
+
+#specialization_list .jumbotron h2
+{
+    font-size: 40px;
+    margin-top: 100px;
+    color: black;
 }
 
 #specialization_list .row
@@ -266,19 +284,23 @@ header .fa-chevron-down {
 #specialization_list .jumbotron hr
 {
     background-color: black;
+    height: 1px;
 }
 
-#specialization_list .jumbotron h2 {
-  font-size: 32px;
-  color: black;
+#specialization_list .jumbotron h3 {
+  font-size: 28px;
 }
 
 #specialization_list .jumbotron i {
   font-size: 35px;
 }
 
-#specialization_list  .jumbotron p {
-  font-size: 14px;
+#specialization_list .jumbotron p {
+  font-size: 20px;
+}
+
+#specialization_list .jumbotron li {
+  font-size: 20px;
 }
 
 #specialization_list a
@@ -292,13 +314,37 @@ header .fa-chevron-down {
   background-color: #fff;
   background-repeat:no-repeat;
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 80%, 80%;
 }
 
 
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  height: 30px;
+}
+
+ol.carousel-indicators li.active {
+  background: white;
+}
+
 #gallery .carousel-item {
-  position: relative;
-  height: 600px;
+   position: relative;
+   height: 600px;
 }
 
 #gallery .carousel-item img {
@@ -309,21 +355,8 @@ header .fa-chevron-down {
   transform: translate(-50%, -50%);
 }
 
-#gallery .carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 #gallery .carousel-indicators {
-  padding-bottom: 20px;
-}
-
-#gallery .jumbotron p4
-{
-    color: #000;
+  padding-bottom: 10px;
 }
 
 #gallery_list .jumbotron {
@@ -348,6 +381,7 @@ header .fa-chevron-down {
 }
 
 #gallery_list .column {
+    cursor: pointer;
 }
 
 #gallery_list .carousel-item {
@@ -375,14 +409,10 @@ header .fa-chevron-down {
   padding-bottom: 20px;
 }
 
-#gallery_list .jumbotron p4
-{
-    color: #000;
-}
-
 #gallery_list .jumbotron h2
 {
-    font-size: 32px;
+    font-size: 40px;
+    margin-top: 100px;
     color: black;
 }
 
@@ -427,13 +457,14 @@ header .fa-chevron-down {
 {
     color: black;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #offer .jumbotron {
   background-position: center;
   background-image: url("../img/lime_green_background.png");
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
 }
 
 #offer .price-wrap {
@@ -443,8 +474,8 @@ header .fa-chevron-down {
 }
 
 #offer .price-box {
-  margin: 20px 10px;
-  padding: 30px;
+  margin: 12px 10px;
+  padding: 20px;
   background-color: #fff;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
@@ -458,6 +489,7 @@ header .fa-chevron-down {
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  font-size: 26px;
 }
 
 #offer .price-box span {
@@ -480,7 +512,6 @@ header .fa-chevron-down {
 
 #offer .price-box .price {
   font-size: 30px;
-  font-weight: bold;
 }
 
 #offer .price-box:hover {
@@ -488,14 +519,32 @@ header .fa-chevron-down {
   transform: scale(1.05);
 }
 
-#offer .offer-text {
-  margin-top: 30px;
-}
-
 #offer a
 {
     color: black;
     font-weight: bold;
+    text-decoration: underline;
+}
+
+#specialization_list a
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#offer_list a
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#offer hr
+{
+    height: 1px;
+    color: black;
+    background-color: black;
 }
 
 #offer_list .jumbotron {
@@ -557,10 +606,6 @@ header .fa-chevron-down {
   transform: scale(1.05);
 }
 
-#offer_list .offer-text {
-  margin-top: 30px;
-}
-
 #offer_list a
 {
     color: black;
@@ -572,6 +617,7 @@ header .fa-chevron-down {
     margin: 0% 20%;
     background-color: white;
     box-shadow: 10px 10px 10px #888888;
+    height: 100vh;
 }
 
 #offer_list .row-body
@@ -580,10 +626,12 @@ header .fa-chevron-down {
 }
 
 #offer_list .column {
+    cursor: pointer;
 }
 
 #offer_list .jumbotron h2 {
-  font-size: 32px;
+  margin-top: 100px;
+  font-size: 40px;
   color: black;
 }
 
@@ -592,12 +640,6 @@ header .fa-chevron-down {
   background-size: cover;
   z-index: -1;
   box-sizing: border-box;
-}
-
-#team .jumbotron h2 {
-  font-size: 32px;
-  color: #000;
-  font-weight: bold;
 }
 
 #team .jumbotron h3 {
@@ -630,43 +672,67 @@ header .fa-chevron-down {
   width: 30%;
 }
 
-#team .jumbotron p4
-{
-    color: #000;
-}
-
 #team .header
 {
- font-family: Calibri;
- font-size: 26px;
+     font-family: Calibri;
+     font-size: 24px;
 }
 
 #team p
 {
     text-align: justify;
+    font-family: Calibri;
     text-indent: 40px;
+    font-size: 24px;
 }
+
 
 #team .text
 {
     font-family: Calibri;
-    font-size: 22px;
+    font-size: 20px;
     font-color: black;
+    text-align: justify;
 }
 
 #team .image1
 {
+    padding: 3%;
+    display: block;
+    background-color: white;
     display: flex;
     margin-left: auto;
-    border-radius: 20px;
     width: 70%;
 }
 
+#team .jumbotron hr
+{
+    background-color: black;
+    height: 1px;
+}
+
+#team .jumbotron h2
+{
+    margin-top: 100px;
+    font-size: 40px;
+    color: black;
+}
+
 #contact .jumbotron {
-  position: relative;
   background-color: white;
   background-size: cover;
   z-index: 0;
+}
+
+#contact .row
+{
+    padding: 3%;
+    display: block;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+    display: flex;
+    background-color: white;
+    border: 2px black solid;
 }
 
 #contact .jumbotron h2 {
@@ -729,8 +795,9 @@ header .fa-chevron-down {
 
 #contact_list .row
 {
-    margin: 3%;
-    padding: 3%;
+    border: 2px black solid;
+    margin: 3% 5%;
+    padding: 2% 0%;
     display: block;
     background-color: white;
     box-shadow: 10px 10px 10px #888888;
@@ -744,9 +811,11 @@ header .fa-chevron-down {
 #contact_list .column {
 }
 
-#contact_list .jumbotron h2 {
-  color: black;
-  font-size: 32px;
+#contact_list .jumbotron h2
+{
+    margin-top: 100px;
+    font-size: 40px;
+    color: black;
 }
 
 #contact_list .jumbotron h3 {
@@ -772,6 +841,7 @@ header .fa-chevron-down {
 
 #contact_list .contact-us .contact-item {
   margin: 1% 0%;
+  height: 50vh;
 }
 
 #contact_list .contact-us .contact-item h3 {
@@ -795,63 +865,336 @@ header .fa-chevron-down {
   color: #4267B2;
 }
 
-
-
 footer {
-  background-color: black;
+  background-color: #e9e7e6;
 }
 
 footer p {
-  color: white;
+  color: black;
   padding: 5px;
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
 }
 
-@media (min-width: 375px) {
-  header h1 {
-    font-size: 36px;
-  }
+@media (max-width: 1100px)
+{
+    .navbar
+    {
+        item-align: center;
+        background-color: black;
+    }
+    .navbar-brand
+    {
+        width: 80%;
+    }
 
-  header .hero-text p {
-    font-size: 16px;
-  }
+    .navbar-collapse {
+        display: none;
+    }
 
-  #specialization .jumbotron h2 {
-    font-size: 32px;
-  }
+    .navbar-toggler {
+        display: block;
+        margin: auto;
+    }
 
-  #specialization .jumbotron h3 {
-    font-size: 26px;
-  }
+    .navbar .navbar-data
+    {
+        padding: 0px;
+        margin: auto;
+    }
 
-  #specialization .jumbotron p {
-    font-size: 18px;
-  }
+    .collapse.navbar-collapse.show {
+        display: block;
+    }
 
-  #specialization_list .jumbotron h2 {
-    font-size: 32px;
-  }
+    .navbar img
+    {
+        width: 100%;
+        margin: auto;
+        height: 50%;
+    }
 
-  #specialization_list  .jumbotron h3 {
-    font-size: 26px;
-  }
+    nav c
+    {
+        color: #000;
+        font-size: 16px;
+    }
 
-  #specialization_list  .jumbotron p {
-    font-size: 18px;
-  }
+    .nav-item
+    {
+        font-size: 16px;
+    }
 
-  #team .card-text {
-    font-size: 15px;
-  }
-}
+    header .hero-text
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 80%;
+        color: black;
+        padding: 10px;
+        text-indent: 20px;
+        text-align: justify;
+        font-family: Calibri;
+    }
 
+    header .hero-img
+    {
+        height: 120vh;
+        background-image: url("../img/main_background.png");
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
 
-@media (min-width: 500px) {
-  #team .card-body {
-    height: 120px;
-  }
+    .navbar.fixed-top
+    {
+       display: block;
+    }
+
+    #specialization_list .jumbotron
+    {
+        margin-top: 200px;
+    }
+
+    #gallery_list .jumbotron
+    {
+        margin-top: 200px;
+    }
+
+    #team .jumbotron
+    {
+        margin-top: 200px;
+    }
+
+    #offer_list .jumbotron
+    {
+        margin-top: 200px;
+    }
+
+    #contact_list .jumbotron
+    {
+        margin-top: 200px;
+    }
+
+    #specialization .jumbotron h3
+    {
+        font-family: Calibri;
+        font-size: 20px;
+    }
+
+    #specialization .jumbotron p
+    {
+        font-family: Calibri;
+        text-indent: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    #offer .price-box h3
+    {
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #offer .price-box .price
+    {
+        font-size: 20px;
+    }
+
+    #offer .price-box .priceheader
+    {
+        font-size: 16px;
+    }
+
+    #contact .contact-us .contact-item
+    {
+        margin: 5% 0%;
+    }
+
+    #specialization_list .jumbotron h3
+    {
+        font-size: 20px;
+        color: black;
+    }
+
+    #specialization_list .jumbotron i
+    {
+        font-size: 18px;
+    }
+
+    #specialization_list .jumbotron p
+    {
+        font-size: 16px;
+    }
+
+    #specialization_list .jumbotron p2
+    {
+        font-size: 18px;
+    }
+
+    #specialization_list .jumbotron li
+    {
+      font-size: 16px;
+    }
+
+    #specialization_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 40px;
+        color: black;
+    }
+
+    #specialization_list .row
+    {
+        margin: 5% 0%;
+        padding: 5%;
+        display: block;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+    }
+
+    #gallery_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 40px;
+        color: black;
+    }
+
+    #team .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 40px;
+        color: black;
+    }
+
+    #offer_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 40px;
+        color: black;
+    }
+
+    #offer_list .row
+    {
+        margin: 0%;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+        cursor: pointer;
+    }
+
+    #offer_list .jumbotron
+    {
+        height: 100%;
+    }
+
+    #contact_list .contact-us {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: block;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: black;
+    }
+
+    #contact_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 40px;
+        color: black;
+    }
+
+    #contact_list .contact-us .contact-item
+    {
+        margin: 5% 0%;
+    }
+
+    #contact_list .contact-us .contact-item
+    {
+        margin: 5% 0%;
+        height: 100%;
+    }
+
+    #gallery_list .row
+    {
+        margin: 5% 0% 0% 0%;
+        padding: 2%;
+        display: block;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+    }
+
+    #team .row
+    {
+        margin: 5% 0% 0% 0%;
+        padding: 5%;
+        display: block;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+
+    }
+
+    #team .row-body
+    {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #team .column {
+      float: left;
+      width: 100%;
+    }
+
+    #team .column2 {
+      float: left;
+      width: 100%;
+    }
+
+    #team .image1
+    {
+        padding: 3%;
+        display: flex;
+        background-color: white;
+        margin: auto;
+        width: 200%;
+    }
+
+    #team .header
+    {
+        font-family: Calibri;
+        font-size: 20px;
+    }
+
+    #team .text
+    {
+        font-family: Calibri;
+        font-size: 16px;
+        font-color: black;
+    }
+
+    #team p
+    {
+        font-family: Calibri;
+        text-indent: 2px;
+        font-size: 16px;
+        text-align: justify;
+        text-indent: 20px;
+    }
 }
 
 #contact-p {
@@ -863,7 +1206,6 @@ footer p {
   font-size: 50px;
 }
 
-
 #gallery .card {
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -873,8 +1215,7 @@ footer p {
 
 #gallery .card img {
   image-align:center;
-  -o-object-fit: scale-down;
-  object-fit: scale-down;
+  width: 100%;
 }
 
 #gallery .card i {
@@ -907,17 +1248,45 @@ footer p {
     font-weight: bold;
 }
 
-li{
-  font-size: 18px;
-}
-
 hr{
-    height: 1px;
-    border-width:0;
-    color:white;
-    background-color:white;
+    height: 2px;
+    color: white;
+    background-color: white;
 }
 
+/* Styl okienka cookie */
+.cookie-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
 
+/* Styl przycisku akceptacji cookie */
+.cookie-btn {
+    background: #1e90ff;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 20px;
+    transition: background-color 0.3s;
+}
 
+.cookie-btn:hover {
+    background: #1475c6;
+}
 
+/* Styl tekstu w okienku cookie */
+.cookie-text {
+    margin: 0 10px; /* Zwiększenie odstępu między tekstem a przyciskami */
+}
