@@ -11,6 +11,58 @@ header .fa-chevron-down {
   color: #fff;
 }
 
+#specialization_list .jumbotron
+{
+    margin-top: 10vh;
+}
+
+#gallery_list .jumbotron
+{
+    margin-top: 10vh;
+}
+
+#team .jumbotron
+{
+    margin-top: 10vh;
+}
+
+#contact_list .jumbotron
+{
+    margin-top: 10vh;
+}
+
+#contact_list .jumbotron h3 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#contact_list .jumbotron p {
+  color: black;
+  font-size: 24px;
+}
+
+#contact .jumbotron h2 {
+  color: black;
+  font-size: 32px;
+}
+
+#contact .jumbotron h3 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#contact .jumbotron p {
+  color: black;
+  font-size: 24px;
+}
+
+#offer_list .jumbotron
+{
+    margin-top: 10vh;
+}
+
 #offer .price-wrap {
   width: 80%;
 }
@@ -63,7 +115,6 @@ header .fa-chevron-down {
   }
 }
 
-
 .navbar
 {
     border-bottom: 1px solid #999;
@@ -71,6 +122,27 @@ header .fa-chevron-down {
     background-color: #fff;
 }
 
+.navbar .navbar-data
+{
+    padding: 0px 60px;
+}
+
+.navbar .navbar-toggler
+{
+    display: none;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar .menutext1 {
+    font-family: Calibri;
+    font-size: 2vh;
+    text-transform : none;
+}
 
 .text1 {
  font-family: Calibri;
@@ -126,17 +198,6 @@ header .fa-chevron-down {
  font-weight: bold;
 }
 
-.menu {
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.menutext1 {
-    font-family: Calibri;
-    font-size: 20px;
-    text-transform : none;
-}
-
 #specialization_list .specialization-info {
   font-size: 28px;
   color: black;
@@ -169,10 +230,13 @@ header .fa-chevron-down {
 
 #offer .offer-info {
   font-size: 28px;
+  margin-top: 30px;
+  color: black;
 }
 
 #offer_list .offer-info {
   font-size: 28px;
+  margin-top: 30px;
 }
 
 th

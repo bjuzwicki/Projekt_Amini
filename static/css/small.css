@@ -1,10 +1,476 @@
-.navbar
+@media (min-width: 0px) and (max-width: 599px)
 {
-    border-bottom: 1px solid #999;
-    padding: 5px 30px;
-    background-color: #fff;
-}
+    nav c
+    {
+        color: #000;
+        font-size: 0.8em;
+        padding: 5px;
+    }
 
+    .navbar-brand
+    {
+        width: 80%;
+    }
+
+    #navbar-mobile-section .nav-item
+    {
+        color: #000;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    #navbar-mobile-section .navbar
+    {
+        display: flex;
+        border-bottom: 1px solid #999;
+        padding: 5px 5px;
+        background-color: #fff;
+    }
+
+    #navbar-mobile-section .navbar-brand
+    {
+        text-align: center;
+        item-align: center;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    #navbar-mobile-section .navbar-toggler
+    {
+        width: 15vw;
+        display: block;
+        font-size: 2.5em;
+    }
+
+    #navbar-mobile-section .navbar img
+    {
+        width: 70vw;
+        height: 100%;
+        max-width: 456px;
+        max-height: 155px;
+    }
+
+    #navbar-mobile-section .navbar .menu
+    {
+        display: none;
+    }
+
+    .menutext1
+    {
+        font-family: Calibri;
+        font-size: 20px;
+        text-transform : none;
+    }
+
+    header .hero-text
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 90vh;
+        color: black;
+        padding: 0 20px;
+        text-indent: 20px;
+        text-align: justify;
+        margin-top: 5%;
+    }
+
+    .author
+    {
+        font-family: Calibri;
+        font-size: 18px;
+        opacity: 100%;
+        font-weight: bold;
+    }
+
+    .text12
+    {
+        font-family: Calibri;
+        font-size: 16px;
+        opacity: 80%;
+    }
+
+    .text1
+    {
+        font-family: Calibri;
+        font-size: 18px;
+        opacity: 80%;
+        color: black;
+    }
+
+    .text2
+    {
+        font-family: Calibri;
+        font-size: 18px;
+        text-indent: 22px;
+        text-align: justify;
+    }
+
+    .text3
+    {
+        font-color: black;
+        font-family: Calibri;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    header .hero-img
+    {
+        height: 120vh;
+        background-image: url("../img/main_background.png");
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    #aboutus h2
+    {
+        font-size: 30px;
+    }
+
+    #specialization h2
+    {
+        font-size: 30px;
+    }
+
+    #gallery h2
+    {
+        font-size: 30px;
+    }
+
+    #offer h2
+    {
+        font-size: 30px;
+    }
+
+    #contact .jumbotron h2
+    {
+      color: black;
+      font-size: 30px;
+    }
+
+    #specialization .jumbotron h3
+    {
+        font-family: Calibri;
+        font-size: 20px;
+    }
+
+    #specialization .jumbotron p
+    {
+        font-family: Calibri;
+        text-indent: 18px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    #specialization .jumbotron p3
+    {
+        font-size: 18px;
+        color: black;
+        margin-top: 30px;
+    }
+
+    #offer .price-box h3
+    {
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #offer .price-box .price
+    {
+        font-size: 20px;
+    }
+
+    #offer .price-box .priceheader
+    {
+        font-size: 16px;
+    }
+
+    #contact .contact-us .contact-item h3
+    {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #contact .contact-us .contact-item .social-media
+    {
+        font-size: 26px;
+    }
+
+    #contact .contact-us .contact-item
+    {
+        margin: 5% 0%;
+    }
+
+    #contact .contact-us .contact-item .social-media a
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+        color: #4267B2;
+        text-shadow: 0 0 1px black;
+    }
+
+    #contact .contact-us .contact-item .social-media a:hover
+    {
+        color: #4267B2;
+    }
+
+    #contact .jumbotron h3
+    {
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #contact .jumbotron p
+    {
+        color: black;
+        font-size: 20px;
+    }
+
+    #specialization_list .jumbotron
+    {
+        margin-top: 20%;
+    }
+
+    #specialization_list .jumbotron h3
+    {
+        font-size: 18px;
+        color: black;
+    }
+
+    #specialization_list .jumbotron i
+    {
+        font-size: 18px;
+    }
+
+    #specialization_list .jumbotron p
+    {
+        font-size: 16px;
+    }
+
+    #specialization_list .jumbotron p2
+    {
+        font-size: 18px;
+    }
+
+    #specialization_list .jumbotron li
+    {
+      font-size: 16px;
+    }
+
+    #specialization_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 30px;
+        color: black;
+    }
+
+    #specialization_list .row
+    {
+        margin: 5% 0%;
+        padding: 5%;
+        display: block;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+    }
+
+    #gallery_list .jumbotron
+    {
+        margin-top: 20%;
+    }
+
+    #gallery_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 30px;
+        color: black;
+    }
+
+    #team .jumbotron
+    {
+        margin-top: 20%;
+    }
+
+    #team .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 30px;
+        color: black;
+    }
+
+    #team .row
+    {
+        margin: 10% 0%;
+        padding: 5%;
+        display: grid;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+    }
+
+    #team .row-body
+    {
+        flex-direction: column;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #team .column
+    {
+      width: 100%;
+    }
+
+    #team .column2
+    {
+      width: 100%;
+    }
+
+    #team .image1
+    {
+        padding: 3%;
+        display: block;
+        display: block;
+        background-color: white;
+        display: flex;
+        margin: auto;
+    }
+
+    #team .header
+    {
+        font-family: Calibri;
+        font-size: 20px;
+    }
+
+    #team .text
+    {
+        font-family: Calibri;
+        font-size: 15px;
+        font-color: black;
+        text-align: justify;
+    }
+
+    #team p
+    {
+        text-indent: 20px;
+        text-align: none;
+        font-family: Calibri;
+        font-size: 0px;
+    }
+
+    #offer_list .jumbotron
+    {
+        margin-top: 20%;
+    }
+
+    #offer_list .jumbotron h2
+    {
+        margin-top: 0;
+        font-size: 30px;
+        color: black;
+    }
+
+    #contact_list .jumbotron
+    {
+        margin-top: 20%;
+    }
+
+    #contact_list .row
+    {
+        border: 2px black solid;
+        margin: auto;
+        padding: 2% 5%;
+        display: block;
+        background-color: white;
+        box-shadow: 10px 10px 10px #888888;
+        width: 90%;
+        height: auto;
+    }
+
+    #contact_list .row-body
+    {
+        margin: 0 auto;
+    }
+
+    #contact_list .column
+    {
+    }
+
+    #contact_list .jumbotron h2
+    {
+        margin-top: 0px;
+        font-size: 24px;
+        color: black;
+    }
+
+    #contact_list .jumbotron h3
+    {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #contact_list .jumbotron p
+    {
+        color: black;
+        font-size: 20px;
+    }
+
+    #contact_list .contact-us
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: black;
+    }
+
+    #contact_list .contact-us .contact-item
+    {
+        margin: 1% 0%;
+    }
+
+    #contact_list .contact-us .contact-item h3
+    {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #contact_list .contact-us .contact-item .social-media
+    {
+        font-size: 26px;
+    }
+
+    #contact_list .contact-us .contact-item .social-media a
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+        color: #4267B2;
+        text-shadow: 0 0 1px black;
+    }
+
+    #contact_list .contact-us .contact-item .social-media a:hover
+    {
+        color: #4267B2;
+    }
+}
 
 #offer .price-wrap {
   width: 90%;
@@ -14,35 +480,11 @@
   width: 90%;
 }
 
-.text1 {
- font-family: Calibri;
- font-size: 18px;
- color: black;
- opacity: 80%;
-}
-
-.text12 {
- font-family: Calibri;
- font-size: 16px;
- opacity: 80%;
-}
-
-.author {
- font-family: Calibri;
- font-size: 18px;
- text-align: right;
- font-weight: bold;
-}
-
-.menu {
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.menutext1 {
-    font-family: Calibri;
-    font-size: 12px;
-    text-transform : none;
+#specialization_list .specialization-info
+{
+    font-size: 18px;
+    color: black;
+    margin-top: 30px;
 }
 
 #offer .offer-info {
@@ -51,12 +493,6 @@
 }
 
 #offer_list .offer-info {
-  font-size: 18px;
-  color: black;
-  margin-top: 30px;
-}
-
-#specialization_list .specialization-info {
   font-size: 18px;
   color: black;
   margin-top: 30px;
@@ -72,20 +508,6 @@
   font-size: 18px;
   color: black;
   margin-top: 30px;
-}
-
-.text2 {
- font-family: Calibri;
- font-size: 16px;
- text-indent: 30px;
- text-align: justify;
-}
-
-.text3 {
- font-family: Calibri;
- text-align: center;
- font-size: 18px;
-
 }
 
 .text4 {
@@ -104,21 +526,6 @@
  font-family: Calibri;
  text-align: left;
  font-size: 18px;
-}
-
-.image1 {
-    max-width: 50%;
-    padding: 5px 0px 15px 0px;
-}
-
-.image2 {
-    max-width: 50%;
-    padding: 5px 0px 15px 0px;
-}
-
-.column1{
-   text-align: center;
-   padding: 30px 0;
 }
 
 th

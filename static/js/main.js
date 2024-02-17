@@ -58,28 +58,47 @@ function scrollFunction()
     var screenWidth = window.screen.width;
     var screenHeight = window.screen.height;
 
-    if(window.screen.width > 1000)
+    if(window.screen.width > 1449)
     {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
         {
             document.getElementById("navbar").style.transition = "padding 0.8s";
             document.getElementById("navbar").style.padding = "5px 80px";
             document.getElementById("logo").style.transition = "width 0.8s, height 0.8s";
-            document.getElementById("logo").style.width = "260px";
-            document.getElementById("logo").style.height = "80px";
+            document.getElementById("logo").style.width = "15vw";
+            document.getElementById("logo").style.height = "100%";
         }
         else
         {
             document.getElementById("navbar").style.transition = "padding 0.8s";
             document.getElementById("navbar").style.padding = "5px 80px";
             document.getElementById("logo").style.transition = "width 0.8s, height 0.8s";
-            document.getElementById("logo").style.width = "300px";
-            document.getElementById("logo").style.height = "100px";
+            document.getElementById("logo").style.width = "20vw";
+            document.getElementById("logo").style.height = "105%";
+        }
+    }
+    else if(window.screen.width > 599)
+    {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+        {
+            document.getElementById("navbar").style.transition = "padding 0.8s";
+            document.getElementById("navbar").style.padding = "5px 60px";
+            document.getElementById("logo").style.transition = "width 0.8s, height 0.8s";
+            document.getElementById("logo").style.width = "14vw";
+            document.getElementById("logo").style.height = "100%";
+        }
+        else
+        {
+            document.getElementById("navbar").style.transition = "padding 0.8s";
+            document.getElementById("navbar").style.padding = "5px 60px";
+            document.getElementById("logo").style.transition = "width 0.8s, height 0.8s";
+            document.getElementById("logo").style.width = "16vw";
+            document.getElementById("logo").style.height = "105%";
         }
     }
     else
     {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
         {
             document.getElementById("data").style.display = "none";
             document.getElementById("brand").style.width = "70%";
@@ -90,7 +109,6 @@ function scrollFunction()
             document.getElementById("brand").style.width = "80%";
         }
     }
-
 }
 
 

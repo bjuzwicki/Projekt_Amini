@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,36 +15,59 @@
     <link rel="stylesheet" type="text/css" href="static/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css" />
     <link rel="stylesheet" href="static/css/main.css">
-    <link rel="stylesheet" media='screen and (min-width: 200px)' href="static/css/small.css">
-    <link rel="stylesheet" media='screen and (min-width: 600px)' href="static/css/medium.css">
-    <link rel="stylesheet" media='screen and (min-width: 768px)' href="static/css/large.css">
+    <link rel="stylesheet" media='screen and (min-width: 0px) and (max-width: 599px)' href="static/css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 600px) and (max-width: 1449px)' href="static/css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 1450px)' href="static/css/large.css">
     <link rel="stylesheet" href="static/css/font-awesome.css">
     <link rel="stylesheet" href="static/css/all.css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
-     <nav class="navbar navbar-expand-sm fixed-top navbar-light navbar-default d-flex justify-content-center d-none" id="navbar" style="width: 100%;">
-        <a class="navbar-brand" id="brand" href="/">
-            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
-        </a>
-        <div class="navbar-data" id="data">
-            <div class="nav ml-auto menu menutext1">
-                <c>&phone; tel: +48 789 274 847</c>
-                <c>&#9993; recepcja@amini.com.pl</c>
-            </div>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"style="font-size: 2em;"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="nav ml-auto menu menutext1">
-                <a class="nav-item nav-link" href="/#">Strona główna</a>
-                <a class="nav-item nav-link" style="border-bottom: 3px solid black;" href="/specjalizacje">Specjalizacje</a>
+    <section id="navbar-mobile-section">
+        <nav class="navbar navbar-default fixed-top navbar-light" id="navbar-mobile">
+            <a class="navbar-brand mr-auto" id="brand=mobile" href="/">
+                <img src="/static/img/logoamini.png" alt="Amini" id="logo-mobile">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar-mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse menutext1 ml-auto" id="collapsibleNavbar-mobile">
+                <a class="nav-item nav-link" href="/">Strona główna</a>
+                <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
                 <a class="nav-item nav-link" href="/galeria">Galeria</a>
                 <a class="nav-item nav-link" href="/zespol">Zespół</a>
                 <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
                 <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
             </div>
+        </nav>
+    </section>
+    <nav class="navbar navbar-default fixed-top navbar-light" id="navbar">
+        <a class="navbar-brand mr-auto" id="brand" href="/">
+            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
+        </a>
+        <div class="navbar-data mr-auto" id="data">
+            <div class="menutext1">
+                <c>&phone; tel: +48 789 274 847</c>
+                <c>&#9993; gabinetamini@gmail.com</c>
+            </div>
+        </div>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse menutext1 ml-auto" id="collapsibleNavbar">
+            <a class="nav-item nav-link" href="/">Strona główna</a>
+            <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
+            <a class="nav-item nav-link" href="/galeria">Galeria</a>
+            <a class="nav-item nav-link" href="/zespol">Zespół</a>
+            <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+            <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
+        </div>
+        <div class="menu menutext1 ml-auto">
+            <a class="nav-item nav-link" href="/">Strona główna</a>
+            <a class="nav-item nav-link" style="border-bottom: 3px solid black;" href="/specjalizacje">Specjalizacje</a>
+            <a class="nav-item nav-link" href="/galeria">Galeria</a>
+            <a class="nav-item nav-link" href="/zespol">Zespół</a>
+            <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+            <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
         </div>
     </nav>
     <main>
@@ -232,58 +254,6 @@
                                         <li>dolegliwości typu migrenowego,</li>
                                         <li>wady postawy,</li>
                                         <li>bóle stawów kręgosłupa i kończyn.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row-body">
-                            <div class="column">
-                                <div class="text-justify" style="padding: 10px 0px">
-                                    <h3><b>IGŁOTERAPIA</b></h3>
-                                    <hr>
-                                    <p><span><b>Co to jest suche igłowanie?</b></span></p>
-                                    <p>Suche igłowanie jest jedną z technik terapeutycznych, która jest stosowana w leczeniu bólu oraz dysfunkcji spowodowanych problemami mięśniowymi, problemami zatok, bólami głowy, a także w celu leczenia niektórych problemów nerwowych. W leczeniu za pomocą suchego igłowania wykorzystuje się bardzo cienkie specjalne akupunkturowe igły. Terapia ta jest nazywana suchym igłowaniem ze względu na fakt, iż igły wykorzystywane do zabiegu nie posiadają możliwości wprowadzenia leku, bądź innej substancji do ciała pacjenta. Technika ta nie jest tożsama z akupunkturą albowiem akupunktura jest częścią Tradycyjnej Medycyny Chińskiej, natomiast suche igłowanie jest techniką medycyny zachodniej, która wymaga diagnozy medycznej.</p>
-                                    <p><span><b>Jak to działa?</b></span></p>
-                                    <p>Suche igłowanie działa poprzez zmianę sposobu odczuwania bólu poprzez ciało (efekt neurologiczny) oraz pomaga organizmowi pozbyć się uporczywego skurczu mięśni związanego z istnieniem punktów spustowych (efekt mięśniowo – powięziowy). Suchemu igłowaniu towarzyszą dodatkowe zmiany w przewodnictwie elektrycznym i chemicznym, które wspomagają proces gojenia. Suche igłowanie nie jest cudownym panaceum, lecz stanowi normalną część fizjoterapii. Dla uzyskania optymalnego efektu suche igłowanie powinno być łączone z terapią manualną i ćwiczeniami.</p>
-                                    <p><span><b>Na czym polega suche igłowanie?</b></span></p>
-                                    <p>Suche igłowanie polega na wprowadzaniu bardzo cienkiej igły bezpośrednio do mięśniowo – powięziowych punktów spustowych. Przed przystąpieniem do nakłucia niewydolnego mięśnia, terapeuta palpacyjnie przeprowadza dokładne badanie, które ma na celu zlokalizowanie napiętego pasma o zwiększonej wrażliwości na nacisk oraz miejscowej odpowiedzi drżeniowej. Zabieg ten można również wykonać bezpośrednio na powięź, ścięgna oraz więzadła. Fizjoterapeuta dobierze grubość i długość igły odpowiednią dla stanu Twojego zdrowia i rozmiaru ciała, a następnie wprowadzi ją w skórę w odpowiednim miejscu. Poczujesz przy tym niewielkie ukłucie. W zależności od techniki igłowania wybranej przez fizjoterapeutę, możesz również poczuć ból mięśni lub ich chwilowy skurcz. Są to normalne i pożądane odczucia, które oznaczają, że doświadczysz ulgi w odniesieniu do swoich objawów.</p>
-                                    <p><span><b>Jakie są przeciwskazania do suchego igłowania?</b></span></p>
-                                    <p>Przeciwskazaniami do suchego igłowania są w szczególności:</p>
-                                    <ul style="margin-left: 35px;">
-                                        <li>igłofobia,</li>
-                                        <li>nowotwór,</li>
-                                        <li>infekcja z lub bez gorączkį,</li>
-                                        <li>zmiany skórne i otwarte rany,</li>
-                                        <li>tętniak,</li>
-                                        <li>zaburzenia czucia,</li>
-                                        <li>zaawansowana osteoporoza,</li>
-                                        <li>krwiak, obrzęki,</li>
-                                        <li>implanty,</li>
-                                        <li>rozrusznik serca,</li>
-                                        <li>pacjenci z zaburzeniami krzepnięcia krwi<span><b> – tylko za zgodą lekarza prowadzącego!!!</b></span>,</li>
-                                        <li>ciąża<span><b> - w pierwszym trymestrze, później tylko za zgodą lekarza prowadzącego!!!</b></span>,</li>
-                                        <li>padaczka, jeśli nie leczona,</li>
-                                        <li>osoby z chorobami psychicznymi nie będą ce w stanie wyrazić świadomej zgody,</li>
-                                        <li>choroby zakaźne.</li>
-                                    </ul>
-                                    <p><span style="text-decoration: underline">W razie jakichkolwiek wątpliwości co do wystąpienia wskazanych wyżej przeciwskazań lub innych wątpliwości co do aktualnego stanu zdrowia, należy o tym poinformować osobę wykonującą suche igłowanie i skonsultować z nią swoje wątpliwości przed rozpoczęciem suchego igłowania.</span></p>
-                                    <p><span><b>Jakie są możliwe działania niepożądane suchego igłowania?</b></span></p>
-                                    <p><span style="text-decoration: underline">Do częstych, typowych i niegroźnych</span> działań niepożądanych suchego igłowania należą w szczególności:</p>
-                                    <ul style="margin-left: 35px;">
-                                        <li>małe krwiaki w miejscu igłowania,</li>
-                                        <li>ból mięśni, który może utrzymywać się przez około 1 – 4 dni,</li>
-                                        <li>1-2 dniowa przeczulica.</li>
-                                    </ul>
-                                    <p><span style="text-decoration: underline">W rzadkich przypadkach,</span> Pacjenci mogą czuć się bardzo szczęśliwi, bliscy łez, spoceni lub mogą odczuwać zimno. U bardzo niewielkiej grupy osób może dojść do chwilowego omdlenia.</p>
-                                    <p><span><b>Jakie są możliwe komplikacje suchego igłowania?</b></span></p>
-                                    <p>Zabieg suchego igłowania wykonany przez wykwalifikowanego terapeutę jest bardzo bezpieczny. Według badań z roku 2014 i 2020 częstotliwość istotniejszych powikłań do zabiegu szacuje się na 0,1%. Dla porównania powikłania po lekach typu aspiryna, ibuprofen i paracetamol szacuje się na 13-18%.</p>
-                                    <p>Do bardzo rzadkich komplikacji suchego igłowania zaliczyć należy:</p>
-                                    <ul style="margin-left: 35px;">
-                                        <li>odma opłucna,</li>
-                                        <li>zranienie narządów wewnętrznych,</li>
-                                        <li>zranienie nerwów.</li>
                                     </ul>
                                 </div>
                             </div>

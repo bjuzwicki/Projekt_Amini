@@ -29,6 +29,15 @@ DEBUG = bool(os.environ.get("DEBUG", default=0))
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
+# SECURITY WARNING: keep the secret key used in production secret!
+#SECRET_KEY = '2h#=gvyyk25c7npsj8^^1l@id8_drwq1&rzn4g5xp)ns=46kj+'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+#DEBUG = True
+
+#ALLOWED_HOSTS = []
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.flatpages'
 ]
 
 MIDDLEWARE = [
@@ -114,6 +125,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+SITE_ID=1
 
 
 # Static files (CSS, JavaScript, Images)

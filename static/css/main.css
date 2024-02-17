@@ -89,17 +89,18 @@ nav i,
   transition: color .3s;
 }
 
-nav a
-{
-    color: #000;
-    font-size: 20px;
-}
-
 nav c
 {
     color: #000;
-    font-size: 20px;
+    font-size: 1em;
     padding: 10px;
+}
+
+.nav-item
+{
+    color: #000;
+    font-size: 1em;
+    text-align: right;
 }
 
 nav a:hover {
@@ -113,20 +114,27 @@ nav a:hover {
     background-color: #fff;
 }
 
-.navbar .navbar-data
+#navbar-mobile-section .navbar
 {
-    padding: 0px 120px;
+    display: none;
 }
 
-c
+.navbar .navbar-data
 {
-    font-size: 5px;
+    padding: 0px 60px;
+}
+
+.navbar .navbar-toggler
+{
+    display: none;
 }
 
 .navbar img
 {
-    width: 300px;
-    height: 100px;
+    width: 20vw;
+    height: 100%;
+    max-width: 456px;
+    max-height: 155px;
 }
 
 header {
@@ -242,12 +250,19 @@ header .fa-chevron-down {
     text-decoration: underline;
 }
 
+#specialization .jumbotron p3
+{
+    font-size: 28px;
+    color: black;
+    margin-top: 30px;
+}
+
 #specialization .jumbotron p
 {
     font-family: Calibri;
     text-indent: 20px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #specialization_list .jumbotron {
@@ -614,10 +629,14 @@ ol.carousel-indicators li.active {
 
 #offer_list .row
 {
-    margin: 0% 20%;
+    margin: auto;
     background-color: white;
     box-shadow: 10px 10px 10px #888888;
-    height: 100vh;
+}
+
+#offer_list img
+{
+    max-width: 100%;
 }
 
 #offer_list .row-body
@@ -726,7 +745,8 @@ ol.carousel-indicators li.active {
 
 #contact .row
 {
-    padding: 3%;
+    margin: auto;
+    padding: 2% 5%;
     display: block;
     background-color: white;
     box-shadow: 10px 10px 10px #888888;
@@ -748,7 +768,7 @@ ol.carousel-indicators li.active {
 
 #contact .jumbotron p {
   color: black;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #contact .contact-us {
@@ -789,18 +809,19 @@ ol.carousel-indicators li.active {
 #contact_list .jumbotron {
   background-image: url("../img/lime_green_background.png");
   background-size: cover;
-  z-index: -1;
+  z-index:  -1;
   box-sizing: border-box;
 }
 
 #contact_list .row
 {
     border: 2px black solid;
-    margin: 3% 5%;
-    padding: 2% 0%;
+    margin: auto;
+    padding: 2% 5%;
     display: block;
     background-color: white;
     box-shadow: 10px 10px 10px #888888;
+
 }
 
 #contact_list .row-body
@@ -837,11 +858,11 @@ ol.carousel-indicators li.active {
   -ms-flex-align: center;
   align-items: center;
   color: black;
+  height: 50vh;
 }
 
 #contact_list .contact-us .contact-item {
   margin: 1% 0%;
-  height: 50vh;
 }
 
 #contact_list .contact-us .contact-item h3 {
@@ -865,6 +886,15 @@ ol.carousel-indicators li.active {
   color: #4267B2;
 }
 
+.contact-item .fa-facebook-square {
+  font-size: 50px;
+}
+
+#contact-p {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
 footer {
   background-color: #e9e7e6;
 }
@@ -875,335 +905,6 @@ footer p {
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
-}
-
-@media (max-width: 1100px)
-{
-    .navbar
-    {
-        item-align: center;
-        background-color: black;
-    }
-    .navbar-brand
-    {
-        width: 80%;
-    }
-
-    .navbar-collapse {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: block;
-        margin: auto;
-    }
-
-    .navbar .navbar-data
-    {
-        padding: 0px;
-        margin: auto;
-    }
-
-    .collapse.navbar-collapse.show {
-        display: block;
-    }
-
-    .navbar img
-    {
-        width: 100%;
-        margin: auto;
-        height: 50%;
-    }
-
-    nav c
-    {
-        color: #000;
-        font-size: 16px;
-    }
-
-    .nav-item
-    {
-        font-size: 16px;
-    }
-
-    header .hero-text
-    {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: 80%;
-        color: black;
-        padding: 10px;
-        text-indent: 20px;
-        text-align: justify;
-        font-family: Calibri;
-    }
-
-    header .hero-img
-    {
-        height: 120vh;
-        background-image: url("../img/main_background.png");
-        background-position: center;
-        background-size: cover;
-        z-index: 0;
-    }
-
-    .navbar.fixed-top
-    {
-       display: block;
-    }
-
-    #specialization_list .jumbotron
-    {
-        margin-top: 200px;
-    }
-
-    #gallery_list .jumbotron
-    {
-        margin-top: 200px;
-    }
-
-    #team .jumbotron
-    {
-        margin-top: 200px;
-    }
-
-    #offer_list .jumbotron
-    {
-        margin-top: 200px;
-    }
-
-    #contact_list .jumbotron
-    {
-        margin-top: 200px;
-    }
-
-    #specialization .jumbotron h3
-    {
-        font-family: Calibri;
-        font-size: 20px;
-    }
-
-    #specialization .jumbotron p
-    {
-        font-family: Calibri;
-        text-indent: 20px;
-        text-align: justify;
-        font-size: 16px;
-    }
-
-    #offer .price-box h3
-    {
-        color: #000;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    #offer .price-box .price
-    {
-        font-size: 20px;
-    }
-
-    #offer .price-box .priceheader
-    {
-        font-size: 16px;
-    }
-
-    #contact .contact-us .contact-item
-    {
-        margin: 5% 0%;
-    }
-
-    #specialization_list .jumbotron h3
-    {
-        font-size: 20px;
-        color: black;
-    }
-
-    #specialization_list .jumbotron i
-    {
-        font-size: 18px;
-    }
-
-    #specialization_list .jumbotron p
-    {
-        font-size: 16px;
-    }
-
-    #specialization_list .jumbotron p2
-    {
-        font-size: 18px;
-    }
-
-    #specialization_list .jumbotron li
-    {
-      font-size: 16px;
-    }
-
-    #specialization_list .jumbotron h2
-    {
-        margin-top: 0px;
-        font-size: 40px;
-        color: black;
-    }
-
-    #specialization_list .row
-    {
-        margin: 5% 0%;
-        padding: 5%;
-        display: block;
-        background-color: white;
-        box-shadow: 10px 10px 10px #888888;
-    }
-
-    #gallery_list .jumbotron h2
-    {
-        margin-top: 0px;
-        font-size: 40px;
-        color: black;
-    }
-
-    #team .jumbotron h2
-    {
-        margin-top: 0px;
-        font-size: 40px;
-        color: black;
-    }
-
-    #offer_list .jumbotron h2
-    {
-        margin-top: 0px;
-        font-size: 40px;
-        color: black;
-    }
-
-    #offer_list .row
-    {
-        margin: 0%;
-        width: 100%;
-        height: auto;
-        background-color: white;
-        box-shadow: 10px 10px 10px #888888;
-        cursor: pointer;
-    }
-
-    #offer_list .jumbotron
-    {
-        height: 100%;
-    }
-
-    #contact_list .contact-us {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: block;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        color: black;
-    }
-
-    #contact_list .jumbotron h2
-    {
-        margin-top: 0px;
-        font-size: 40px;
-        color: black;
-    }
-
-    #contact_list .contact-us .contact-item
-    {
-        margin: 5% 0%;
-    }
-
-    #contact_list .contact-us .contact-item
-    {
-        margin: 5% 0%;
-        height: 100%;
-    }
-
-    #gallery_list .row
-    {
-        margin: 5% 0% 0% 0%;
-        padding: 2%;
-        display: block;
-        background-color: white;
-        box-shadow: 10px 10px 10px #888888;
-    }
-
-    #team .row
-    {
-        margin: 5% 0% 0% 0%;
-        padding: 5%;
-        display: block;
-        background-color: white;
-        box-shadow: 10px 10px 10px #888888;
-
-    }
-
-    #team .row-body
-    {
-        display: inline-block;
-        margin: 0 auto;
-    }
-
-    #team .column {
-      float: left;
-      width: 100%;
-    }
-
-    #team .column2 {
-      float: left;
-      width: 100%;
-    }
-
-    #team .image1
-    {
-        padding: 3%;
-        display: flex;
-        background-color: white;
-        margin: auto;
-        width: 200%;
-    }
-
-    #team .header
-    {
-        font-family: Calibri;
-        font-size: 20px;
-    }
-
-    #team .text
-    {
-        font-family: Calibri;
-        font-size: 16px;
-        font-color: black;
-    }
-
-    #team p
-    {
-        font-family: Calibri;
-        text-indent: 2px;
-        font-size: 16px;
-        text-align: justify;
-        text-indent: 20px;
-    }
-}
-
-#contact-p {
-  margin-top: 25px;
-  font-size: 20px;
-}
-
-.contact-item .fa-facebook-square {
-  font-size: 50px;
 }
 
 #gallery .card {

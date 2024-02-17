@@ -15,37 +15,59 @@
     <link rel="stylesheet" type="text/css" href="static/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css" />
     <link rel="stylesheet" href="static/css/main.css">
-    <link rel="stylesheet" media='screen and (min-width: 200px)' href="static/css/small.css">
-    <link rel="stylesheet" media='screen and (min-width: 600px)' href="static/css/medium.css">
-    <link rel="stylesheet" media='screen and (min-width: 768px)' href="static/css/large.css">
+    <link rel="stylesheet" media='screen and (min-width: 0px) and (max-width: 599px)' href="static/css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 600px) and (max-width: 1449px)' href="static/css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 1450px)' href="static/css/large.css">
     <link rel="stylesheet" href="static/css/font-awesome.css">
     <link rel="stylesheet" href="static/css/all.css">
 </head>
-
 <body data-spy="scroll" data-target="#navbar">
-    <nav class="navbar navbar-expand-sm fixed-top navbar-light navbar-default d-flex justify-content-center d-none" id="navbar" style="width: 100%;">
-        <a class="navbar-brand" id="brand" href="/">
-            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
-        </a>
-        <div class="navbar-data" id="data">
-            <div class="nav ml-auto menu menutext1">
-                <c>&phone; tel: +48 789 274 847</c>
-                <c>&#9993; recepcja@amini.com.pl</c>
-            </div>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"style="font-size: 2em;"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="nav ml-auto menu menutext1">
+    <section id="navbar-mobile-section">
+        <nav class="navbar navbar-default fixed-top navbar-light" id="navbar-mobile">
+            <a class="navbar-brand mr-auto" id="brand=mobile" href="/">
+                <img src="/static/img/logoamini.png" alt="Amini" id="logo-mobile">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar-mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse menutext1 ml-auto" id="collapsibleNavbar-mobile">
                 <a class="nav-item nav-link" href="/">Strona główna</a>
                 <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
                 <a class="nav-item nav-link" href="/galeria">Galeria</a>
-                <a class="nav-item nav-link" style="border-bottom: 3px solid black;" href="/zespol">Zespół</a>
+                <a class="nav-item nav-link" href="/zespol">Zespół</a>
                 <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
                 <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
             </div>
+        </nav>
+    </section>
+    <nav class="navbar navbar-default fixed-top navbar-light" id="navbar">
+        <a class="navbar-brand mr-auto" id="brand" href="/">
+            <img src="/static/img/logoamini.png" alt="Amini" id="logo">
+        </a>
+        <div class="navbar-data mr-auto" id="data">
+            <div class="menutext1">
+                <c>&phone; tel: +48 789 274 847</c>
+                <c>&#9993; gabinetamini@gmail.com</c>
+            </div>
+        </div>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse menutext1 ml-auto" id="collapsibleNavbar">
+            <a class="nav-item nav-link" href="/">Strona główna</a>
+            <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
+            <a class="nav-item nav-link" href="/galeria">Galeria</a>
+            <a class="nav-item nav-link" href="/zespol">Zespół</a>
+            <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+            <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
+        </div>
+        <div class="menu menutext1 ml-auto">
+            <a class="nav-item nav-link" href="/">Strona główna</a>
+            <a class="nav-item nav-link" href="/specjalizacje">Specjalizacje</a>
+            <a class="nav-item nav-link" href="/galeria">Galeria</a>
+            <a class="nav-item nav-link" style="border-bottom: 3px solid black;" href="/zespol">Zespół</a>
+            <a class="nav-item nav-link" style="color: #fe0101; font-weight: bold;" href="/cennik">Cennik</a>
+            <a class="nav-item nav-link" style="color: #0101ff; font-weight: bold;" href="/kontakt">Kontakt</a>
         </div>
     </nav>
     <main>
@@ -65,20 +87,6 @@
                             </div>
                             <div class="column2">
                                 <img class="image1" src="static/img/team/Jola.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row-body">
-                            <div class="column">
-                                <h3><span class="header"><b>Marta Staniek</b></span></h3>
-                                <hr>
-                                <p>
-                                    <span class="text">Jestem absolwentką Akademii Pedagogiki Specjalnej na kierunkach pedagogika oraz pedagogika specjalna. Uzyskałam tytuły zawodowe na specjalnościach: edukacja wczesnoszkolna i korekcyjna oraz edukacja integracyjna i włączająca zdobywając uprawnienia do pracy z dziećmi w normie rozwojowej oraz tych ze specjalnymi potrzebami edukacyjnymi czy specyficznymi trudnościami w uczeniu się. Ukończyłam również studia podyplomowe z zakresu terapii i diagnozy Integracji Sensorycznej oraz liczne kursy i szkolenia jak np. kurs Monachijskiej Funkcjonalnej Diagnostyki Rozwojowej czy terapii ręki i zaburzeń motoryki małej. Od 2011 roku związana byłam z placówkami edukacyjnymi, gdzie prowadziłam zajęcia specjalistyczne i pracowałam z dziećmi w wieku wczesnoszkolnym oraz przedszkolnym. W gabinecie AMINI prowadzę diagnostykę i terapię z zakresu Integracji Sensorycznej.</span>
-                                </p>
-                            </div>
-                            <div class="column2">
-                                <img class="image1" src="static/img/team/Marta.jpg">
                             </div>
                         </div>
                     </div>
@@ -236,6 +244,69 @@
                             </div>
                             <div class="column2">
                                 <img class="image1" src="static/img/team/Karolina.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Michał Skok</b></span></h3>
+                                <hr>
+                                <p>
+                                    <span class="text">Jestem magistrem fizjoterapii, absolwentem Wyższej Szkoły Rehabilitacji w Warszawie, posiadającym wieloletnie doświadczenie w pracy zawodowej. Cały czas powiększam swoją wiedzę z zakresu fizjoterapii, a szczególnie terapii manualnej, rehabilitacji pooperacyjnej, ortopedycznej, sportowej. Ukończyłem wiele szkoleń, kursów, warsztatów. Mój profil przedstawia się następująco:
+    • Rehabilitacja pooperacyjna (operacje kręgosłupa, artroskopie kończyn, endoprotezoplastyka);
+    • Fizjoterapia pourazowa (po złamaniach, zespoleniach chirurgicznych, skręceniach);
+    • Rehabilitacja neurologiczna;
+    • Taping Rehabilitacyjno – sportowy;
+    • Terapia manualna w obrębie głowy i szyi;
+    • Zespoły bólowe kręgosłupa lędźwiowego i piersiowego;
+    • Fascial Distortion Model;
+    • Holistyczna terapia strukturalna;
+    • Medyczny Trening Funkcjonalny.
+Jestem również technikiem masażystą specjalizującym się w masażach:
+    • sportowym;
+    • bańką chińską;
+    • powięziowym;
+    • relaksacyjnym, w tym relaksacyjny całego ciała;
+    • ujędrniającym – anty celulitowym;
+    • limfatycznym;
+    • twarzy;
+    • gorącymi kamieniami.</span>
+                                </p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/michal_skok.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Anna Dresler</b></span></h3>
+                                <hr>
+                                <p>
+                                    <span class="text">Pedagog, Psycholog, coach i psychodietetyk. Terapeuta TSR (Terapii skoncentrowanej na rozwiązaniach - certyfikat w standardach szkolenia VCC). Psychoterapeuta w trakcie certyfikacji w Polskim Instytucie Ericsonowskim w Łodzi, atestowanym przez Polskie Towarzystwo Psychiatryczne (rekomendacja the Milton H Erickson Foundation INC, Phoenix, Arizona, US).
+Certyfikowany coach - akredytowany kurs pod przewodnictwem Urszuli Sadomskiej "Building of a Coach Awareness" zgodny z kodeksem i standardami ICF Certificate No. 010/2012/BCA/ACSTH, accredited international Coach federation training, st. podyplomowe Trainer and Business Coach.
+Posiadam uprawnienia do prowadzenia terapii Generation Code dla celów diagnostycznych i terapii rodzinnej w oparciu o autorski program Aldony Karużys.
+Praca nad sobą jest moją pasją i powołaniem. Odbyłam wiele kursów i szkoleń mających na celu podniesienie moich kompetencji, obecnie m.in. jestem w trakcie 1,5 rocznych studiów podyplomowych z zakresu par i rodzin. W pracy z pacjentami opieram się na Podejściu Ericsonowskim oraz terapii skoncentrowanej na rozwiązaniach, uwzględniam również systemowe spojrzenie na funkcjonowanie człowieka. Pracuję w ujęciu holistycznym wykorzystując  umiejętności terapeutyczne i coachingowe, tak aby zamierzony cel został osiągnięty.</span>
+                                </p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/anna_dresler.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-body">
+                            <div class="column">
+                                <h3><span class="header"><b>Karolina Wołyniak</b></span></h3>
+                                <hr>
+                                <p>
+                                    <span class="text">Z wykształcenia jestem psychologiem. Studia magisterskie skończyłam z dwiema specjalnościami: psychoterapia i terapia seksuologiczna oraz psychologia kliniczna. Ukończyłam studia podyplomowe na kierunku przygotowanie pedagogiczne oraz edukacja i rewalidacja osób ze spektrum autyzmu. Swoje doświadczenie zdobywałam pracując z dziećmi w wieku przedszkolnym i szkolnym, w placówce publicznej oraz prywatnej. Sukcesywnie  poszerzam swoją wiedzę, w tym między innymi w zakresie psychoterapii behawioralnej dzieci i młodzieży z elementami III fali.</span>
+                                </p>
+                            </div>
+                            <div class="column2">
+                                <img class="image1" src="static/img/team/karolina_wolyniak.jpg">
                             </div>
                         </div>
                     </div>
